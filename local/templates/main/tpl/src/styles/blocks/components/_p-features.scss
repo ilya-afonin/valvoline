@@ -1,0 +1,90 @@
+.p-features {
+	margin-top: -70px;
+
+	&__row {
+		display: flex;
+	}
+
+	&__card {
+		width: 50%;
+		position: relative;
+		padding: 40px 20px 40px 40px;
+		overflow: hidden;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			height: 110px;
+			pointer-events: none; 
+		}
+
+		&--light {
+			background-color: #09C;
+			
+			&:after {
+				background: linear-gradient(0deg, #0099CC 2.6%, rgba(0, 153, 204, 0) 100%);
+			}
+		}
+
+		&--blue {
+			background-color: #003399;
+
+			&:after {
+				background: linear-gradient(0deg, #003399 2.6%, rgba(0, 51, 153, 0) 100%);
+			}
+		}
+	}
+
+	&__inner {
+		height: 620px;
+	}
+
+	&__title {
+		font-size: 36px;
+		line-height: 43px;
+		margin-bottom: 30px;
+		color: #fff;
+		font-weight: 700;
+	}
+
+	&__text {
+		p {
+			color: #fff;
+			margin-top: 0;
+			margin-bottom: 35px;
+			font-size: 20px;
+			line-height: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.mCSB_scrollTools .mCSB_draggerRail {
+		width: 6px;
+		border-radius: 0;
+		background: rgba(255, 255, 255, 0.2) !important;
+	}
+
+	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+		background: rgba(255, 255, 255, 0.9);
+	}
+
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 0;
+		width: 6px;
+	}
+
+	.mCSB_scrollTools {
+		opacity: 1;
+	}
+
+	.mCSB_draggerContainer {
+		margin: 100px 0;
+	}
+}

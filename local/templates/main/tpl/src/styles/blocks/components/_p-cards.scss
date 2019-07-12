@@ -1,0 +1,79 @@
+.p-cards {
+	padding-top: 150px;
+	padding-bottom: 50px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__col {
+		width: 48%;
+		margin-bottom: 70px;
+	}
+}
+
+.p-card {
+	position: relative;
+	padding: 35px 0 0 225px;
+
+	&:hover {
+
+		&:after {
+			background: #003399;
+		}
+
+		.p-card {
+
+			&__image {
+
+				@media screen and (min-width: 1024px) {
+					transform: translateY(-40px);
+				}
+			}
+
+			&__name {
+				color: #fff;
+			}
+		}
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 177px;
+		bottom: 0;
+		background-color: #EEE;
+		z-index: -1;
+		transition: background-color .3s;
+	}
+
+	&__link {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 72px;
+		color: #111820;
+		writing-mode: tb-rl;
+		transform: rotate(-180deg);
+		position: absolute;
+		bottom: 67px;
+		left: 90px;
+		transition: color .3s;
+	}
+
+	&__image {
+		transform: translateY(10px);
+		transition: transform .3s;
+	}
+}

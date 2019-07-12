@@ -1,0 +1,48 @@
+@media screen and (max-width: 1279px) {
+
+	.p-cards {
+		padding-top: 0;
+
+		&__col {
+			margin-bottom: 30px;
+		}
+	}
+
+	.p-card {
+		padding-left: 115px;
+		padding-bottom: 30px;
+
+		&:after {
+			width: calc(100% - 70px);
+		}
+		
+		&__name {
+			bottom: 60px;
+			left: 36px;
+			font-size: 48px;
+			line-height: 1;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.p-cards {
+		padding-bottom: 0;
+
+		&__col {
+			width: 100%;
+		}
+	}
+
+	.p-card {
+		padding-left: 95px;
+		padding-bottom: 20px;
+		padding-top: 50px;
+		
+		&__name {
+			bottom: 40px;
+			left: 30px;
+		}
+	}
+}

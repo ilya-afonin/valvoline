@@ -1,0 +1,70 @@
+@media screen and (max-width: 1279px) {
+
+	.p-features {
+		margin: 0 -30px;
+
+		&__card {
+			padding: 20px 15px 20px 30px; 
+		}
+
+		&__title {
+			font-size: 26px;
+			line-height: 28px;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+
+			p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+
+		&__inner {
+			height: 370px;
+		}
+
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+			width: 2px;
+		}
+
+		.mCSB_scrollTools .mCSB_draggerRail {
+			width: 2px;
+		}
+
+		.mCSB_draggerContainer {
+			margin: 50px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.p-features {
+		margin: 0 -15px;
+
+		&__row {
+			display: block;
+		}
+
+		&__card {
+			width: 100%;
+			padding: 25px 10px 25px 15px;
+		}
+
+		&__inner {
+			height: 310px;
+		}
+
+		&__title {
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
+}

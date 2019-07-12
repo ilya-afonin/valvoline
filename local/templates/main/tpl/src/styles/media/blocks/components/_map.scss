@@ -1,0 +1,55 @@
+@media screen and (max-width: 1499px) {
+
+	.map {
+
+		&__content {
+			margin-left: 30px;
+			
+		}
+	}
+}
+
+@media screen and (max-width: 1279px) {
+
+	.map {
+
+		&__content {
+			margin-left: 30px;
+			// margin: 0 auto;
+			// text-align: center;
+
+			.m-cont {
+
+				&__title {
+					// text-align: center;
+				}
+
+				&__button {
+					// justify-content: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.map {
+		min-height: 930px;
+		padding: 90px 0;
+		align-items: flex-start;
+
+		&__content {
+			padding: 20px;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		.marker {
+
+			&__descr {
+				width: 290px;
+			}
+		}
+	}
+}

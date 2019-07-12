@@ -1,0 +1,45 @@
+.soc {
+	display: flex;
+
+	&__item {
+		position: relative;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		padding: 10px 15px;
+		margin-right: 10px;
+		transition: opacity .3s;
+
+		@media screen and (min-width: 768px) {
+			margin-right: 20px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			opacity: .9;
+		}
+
+		&-text {
+			font-size: 16px;
+			color: #fff;
+		}
+
+		&-link {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		&-img {
+			max-height: 18px;
+			max-width: 17px;
+			margin-right: 10px;
+			margin-bottom: 0 !important;
+		}
+	}
+}

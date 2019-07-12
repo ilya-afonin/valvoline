@@ -1,0 +1,141 @@
+.w-slider {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 190px;
+
+	&__scene {
+		width: 720px;
+		background-color: rgba(255,255,255,0.05);
+	}
+
+	&__slide {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		padding: 30px 45px;
+
+		&-img {
+			max-width: 40px;
+			height: auto;
+			margin-right: 40px;
+			flex-shrink: 0;
+		}
+
+		&-content {
+			flex-grow: 2;
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 30px;
+				height: 2px;
+				background-color: #fff; 
+			}
+		}
+
+		&-title {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 1;
+			color: #fff;
+			margin-bottom: 15px;
+		}
+
+		&-text {
+			font-size: 18px;
+			line-height: 24px;
+			color: #fff;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__controls {
+		width: 240px;
+		position: relative;
+		background: rgba(17, 24, 32, 0.4);
+		padding: 30px 25px;
+
+		&:after {
+			position: absolute;
+			content: '';
+			left: 100%;
+			top: 0;
+			bottom: 0;
+			width: 1000px;
+			background: rgba(17, 24, 32, 0.4);
+		}
+	}
+
+	&__counter {
+		display: flex;
+		align-items: center;
+
+		&-current,
+		&-value {
+			color: #fff;
+			font-size: 18px;
+		}
+
+		&-line {
+			width: 130px;
+			height: 2px;
+			position: relative;
+			margin: 0 10px;
+			background: rgba(255, 255, 255, 0.5);
+
+			span {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 0;
+				background-color: #F33;
+				animation: none;
+
+				&.animated {
+					animation: line 5s linear forwards;
+				}
+			}
+		}
+	}
+
+	&__arrows {
+		position: absolute;
+		bottom: 25px;
+		right: 25px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__arr {
+		background-image: url(../images/static/w-slider-arr.svg);
+		opacity: .25;
+		transition: opacity .3s;
+		width: 50px;
+		height: 50px;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-right: 20px;
+		cursor: pointer;
+
+		&:hover {
+			opacity: .7;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--next {
+			transform: rotate(180deg);
+		}
+	}
+}

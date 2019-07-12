@@ -1,0 +1,31 @@
+@media screen and (max-width: 1499px) {
+	
+	.w-slider {
+		height: 170px;
+
+		&__scene {
+			max-width: 720px;
+			width: calc(100% - 240px);
+		}
+
+		&__slide {
+			padding: 30px;
+
+			&-title {
+				font-size: 18px;
+			}
+
+			&-text {
+				font-size: 14px;
+				line-height: 19px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.w-slider {
+		display: none; 
+	}
+}

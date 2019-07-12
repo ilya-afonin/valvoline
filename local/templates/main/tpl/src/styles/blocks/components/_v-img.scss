@@ -1,0 +1,35 @@
+.v-img {
+	position: relative;
+	margin-bottom: 70px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__link {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 100px;
+			height: 100px;
+			background-image: url(../images/static/play_btn.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}

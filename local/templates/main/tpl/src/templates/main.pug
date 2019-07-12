@@ -1,0 +1,259 @@
+extends layout
+
+block title
+	title main
+
+block content
+
+	.welcome(style='background-image:url(assets/images/content/welcome-bg.jpg)')
+		video(autoplay loop muted).welcome__video
+			source(src='assets/video/videoplayback.mp4')
+		.welcome__inner(data-aos='fade-up' data-aos-delay="100")
+			.welcome__content
+				.welcome__content-title Наша цель:
+				.welcome__content-text Чтобы все, к чему мы прикасаемся, работало лучше
+			.welcome__note Листайте дальше
+
+			.welcome__soc(data-aos='fade-up')
+				.welcome__soc-item
+					a(href="#").welcome__soc-link
+					.welcome__soc-img-wrapper
+						img(src="assets/images/static/icon-fb.svg", alt="").welcome__soc-img
+					.welcome__soc-name Facebook
+				.welcome__soc-item
+					a(href="#").welcome__soc-link
+					.welcome__soc-img-wrapper
+						img(src="assets/images/static/icon-inst.svg", alt="").welcome__soc-img
+					.welcome__soc-name Instagram
+				.welcome__soc-item
+					a(href="#").welcome__soc-link
+					.welcome__soc-img-wrapper
+						img(src="assets/images/static/icon-vk.svg", alt="").welcome__soc-img
+					.welcome__soc-name Vkontakte
+
+			.welcome__w-slider(data-aos='fade-up' data-aos-delay="300")
+				.w-slider
+					.w-slider__scene.owl-carousel.owl-theme
+						.w-slider__slide
+							.w-slider__slide-img
+								img(src="assets/images/static/w-slider-icon.svg", alt="").w-slider__slide-img-file
+							.w-slider__slide-content
+								.w-slider__slide-title Широкий ассортимент продуктов
+								.w-slider__slide-text Valvoline отличается индивидуальными рецептурами, которые соответствуют новейшим OEM спецификациям автопроизводителей, а в ряде случаев и превосходят их.
+						.w-slider__slide
+							.w-slider__slide-img
+								img(src="assets/images/static/w-slider-icon.svg", alt="").w-slider__slide-img-file
+							.w-slider__slide-content
+								.w-slider__slide-title Широкий ассортимент продуктов
+								.w-slider__slide-text Valvoline отличается индивидуальными рецептурами, которые соответствуют новейшим OEM спецификациям автопроизводителей, а в ряде случаев и превосходят их.
+						.w-slider__slide
+							.w-slider__slide-img
+								img(src="assets/images/static/w-slider-icon.svg", alt="").w-slider__slide-img-file
+							.w-slider__slide-content
+								.w-slider__slide-title Широкий ассортимент продуктов
+								.w-slider__slide-text Valvoline отличается индивидуальными рецептурами, которые соответствуют новейшим OEM спецификациям автопроизводителей, а в ряде случаев и превосходят их.
+
+					.w-slider__controls
+						.w-slider__counter
+							.w-slider__counter-current
+							.w-slider__counter-line
+								span.animated
+							.w-slider__counter-value
+						.w-slider__arrows
+
+	.container
+		.overlay
+		.m-content-wrapper
+			.m-content
+				.m-content__promo
+
+					.m-content__promo-card
+						.m-content__promo-title 150
+						.m-content__promo-text Лет доверия
+
+				.m-content__content
+					h3 Valvoline – одна из первых и самых надежных в мире марок смазочных материалов. Уже один этот факт делает марку Valvoline особенной и отражает те ценности, которым мы остаемся приверженными на протяжении многих лет, является доказательством востребованности и актуальности нашей продукции.
+
+					p С момента создания компании Valvoline доктором Джоном Эллисом в 1866 году мир сильно изменился. Компания Valvoline не просто развивалась вместе с миром, но неизменно предлагала и предлагает ему множество революционных, меняющих всю отрасль решений.
+
+					p Сегодня как профессиональный, так и потребительский сегменты рынка все так же доверяют Valvoline, поскольку предлагая наши инновационные продукты, услуги и инструменты мы предлагаем и наилучшие схемы взаимодействия как с предприятиями, так и с частными потребителями.
+
+					.v-img
+						a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk").v-img__link
+						img(src="assets/images/content/video.jpg", alt="")
+
+					p С момента создания компании Valvoline доктором Джоном Эллисом в 1866 году мир сильно изменился. Компания Valvoline не просто развивалась вместе с миром, но неизменно предлагала и предлагает ему множество революционных, меняющих всю отрасль решений.
+
+					p Сегодня как профессиональный, так и потребительский сегменты рынка все так же доверяют Valvoline, поскольку предлагая наши инновационные продукты, услуги и инструменты мы предлагаем и наилучшие схемы взаимодействия как с предприятиями, так и с частными потребителями.
+
+					a(href="#" data-link='valvoline.com/ru-ru').m-content__final 
+
+		.p-cards
+			.p-cards__row(data-aos='fade-up' )
+
+				.p-cards__col
+					.p-card
+						a(href="#").p-card__link
+						.p-card__name SynPower
+						.p-card__image
+							img(src="assets/images/content/p-card.png", alt="").p-card__image-file
+				.p-cards__col
+					.p-card
+						a(href="#").p-card__link
+						.p-card__name MaxLife
+						.p-card__image
+							img(src="assets/images/content/p-card.png", alt="").p-card__image-file
+				.p-cards__col
+					.p-card
+						a(href="#").p-card__link
+						.p-card__name All-Climate
+						.p-card__image
+							img(src="assets/images/content/p-card.png", alt="").p-card__image-file
+				.p-cards__col
+					.p-card
+						a(href="#").p-card__link
+						.p-card__name VR1 Racing
+						.p-card__image
+							img(src="assets/images/content/p-card.png", alt="").p-card__image-file
+
+		.promo
+			.promo__row(data-aos='fade-up')
+				.promo__col.promo__col--light
+					.promo__title Какие продукты подходят вам?
+					.promo__button
+						a(href="#").button.button--white Онлайн подборщик
+				.promo__col.promo__col--blue
+					.promo__title Приложение подборщик Valvoline
+					.promo__apps
+						.promo__app
+							a(href="#").promo__app-link
+							div.promo__app-image
+								<svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.0633 0.722656C14.7493 1.63266 14.0843 6.82316 14.2243 8.81816C17.5038 9.14716 21.8438 4.80716 21.0633 0.722656ZM8.64357 9.17691C8.26964 9.17771 7.89654 9.21226 7.52882 9.28016C-6.54643 11.9612 2.38557 35.7997 8.96557 35.7227C11.3246 35.7227 12.3903 34.2789 14.9173 34.2789C17.4443 34.2789 18.3036 35.7227 20.6608 35.7227C23.4223 35.7542 26.6336 31.5384 28.3521 26.4599C25.6308 25.2769 23.8546 22.4699 23.8528 19.3549C23.8563 16.5742 25.2773 14.0139 27.5698 12.6577C26.2871 10.9777 24.3323 9.75266 21.5236 9.28016C18.2738 8.69741 16.9806 10.7869 14.5008 10.7869C12.0386 10.7869 11.0323 9.18741 8.64357 9.17691Z" fill="white"/>
+								</svg>
+
+							.promo__app-text Загрузите в <span>App Store</span>
+						.promo__app
+							a(href="#").promo__app-link
+							div.promo__app-image
+								<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.2369 9.20756L16.3596 14.0848L2.73936 0.464554C3.51811 0.181053 4.41936 0.202053 5.25061 0.648303L21.2369 9.2058V9.20756ZM27.1991 12.3978C29.3779 13.5651 29.3779 16.6888 27.1991 17.8543L22.5931 20.3201L17.4009 15.1261L22.5931 9.9338L27.1991 12.3978ZM1.49161 1.30105L15.3166 15.1261L1.49161 28.9511C0.975276 28.3843 0.691037 27.644 0.695361 26.8773V3.3748C0.695361 2.55405 1.00336 1.8383 1.49161 1.30105ZM2.73936 29.7876L16.3596 16.1673L21.2369 21.0463L5.25061 29.6038C4.86934 29.8117 4.448 29.9357 4.01487 29.9674C3.58174 29.9991 3.14684 29.9378 2.73936 29.7876Z" fill="white"/>
+								</svg>
+
+							.promo__app-text Доступно в  <span>Google Play</span>
+
+		.m-cont(data-aos='fade-up')
+			.m-cont__inner
+				.m-cont__title Найти ближайшие <br> точки продаж в
+					.m-cont__title-checked
+						.m-cont__title-checked-name Москве
+						.m-cont__drop
+							a(href="#").m-cont__drop-link Москва
+							a(href="#").m-cont__drop-link Санкт-Петербург
+							a(href="#").m-cont__drop-link Новосибирск
+							a(href="#").m-cont__drop-link Екатеринбург
+							a(href="#").m-cont__drop-link Нижний Новгород
+							a(href="#").m-cont__drop-link Казань
+							a(href="#").m-cont__drop-link Москва
+							a(href="#").m-cont__drop-link Санкт-Петербург
+							a(href="#").m-cont__drop-link Новосибирск
+							a(href="#").m-cont__drop-link Екатеринбург
+							a(href="#").m-cont__drop-link Нижний Новгород
+							a(href="#").m-cont__drop-link Казань
+				.m-cont__button
+					a(href="#").button.button--red.button--compact Показать на карте
+
+				.m-cont__stats
+					.m-cont__stat
+						.m-cont__stat-value 579
+						.m-cont__stat-name точек<br> продаж
+					.m-cont__stat
+						.m-cont__stat-value 108
+						.m-cont__stat-name городов
+
+		.art-slider(data-aos='fade-up')
+			.art-slider__scene.owl-carousel
+				.art-slider__slide(style='background-image: url(assets/images/content/cars.jpg)')
+					.art-slider__slide-content
+						.art-slider__title Продли жизнь двигателя
+						.art-slider__button
+							a(href="#").button.button--white.button--compact Подробнее
+				.art-slider__slide(style='background-image: url(assets/images/content/cars.jpg)')
+					.art-slider__slide-content
+						.art-slider__title Продли жизнь двигателя
+						.art-slider__button
+							a(href="#").button.button--white.button--compact Подробнее
+				.art-slider__slide(style='background-image: url(assets/images/content/cars.jpg)')
+					.art-slider__slide-content
+						.art-slider__title Продли жизнь двигателя
+						.art-slider__button
+							a(href="#").button.button--white.button--compact Подробнее
+			.art-slider__counter
+				.w-slider__counter-current 01
+				.w-slider__counter-line
+					span.animated
+				.w-slider__counter-value 07
+			.art-slider__arrows
+
+		.m-articles(data-aos='fade-up')
+			.m-articles__top
+				.m-articles__title Полезная информация
+				a(href="#").m-articles__link Все статьи
+			.m-articles__content
+
+				.c-cards
+					.c-cards__big
+						.c-cards__big-col
+							.c-card.c-card--big
+								a(href="#").c-card__link
+								.c-card__image(style='background-image:url(assets/images/content/man.jpg)')
+								.c-card__content
+									.c-card__tag # Все о масле
+									.c-card__title Какое масло лучше выбрать для двигателя?
+						.c-cards__big-col
+							.c-cards__big-row
+								.c-card.c-card--mid.c-card--light
+									a(href="#").c-card__link
+									//- .c-card__image(style='background-image:url(assets/images/content)')
+									.c-card__content
+										.c-card__tag # Все о масле
+										.c-card__title Какое масло лучше выбрать для двигателя?
+							.c-cards__big-row
+								.c-card.c-card--small.c-card--blue
+									a(href="#").c-card__link
+									//- .c-card__image(style='background-image:url(assets/images/content)')
+									.c-card__content
+										.c-card__tag # Все о масле
+										.c-card__title Какое масло лучше выбрать для двигателя?
+								.c-card.c-card--small.c-card--grey
+									a(href="#").c-card__link
+									//- .c-card__image(style='background-image:url(assets/images/content)')
+									.c-card__content
+										.c-card__tag # Все о масле
+										.c-card__title Какое масло лучше выбрать для двигателя?
+
+		.seller(data-aos='fade-up')
+			.seller__row
+				.seller__card
+					.seller__card-name Каталог
+					.seller__card-image
+						img(src="assets/images/content/seller-card.jpg", alt="").seller__card-image-file
+						a(href="#").seller__card-image-link
+						.seller__card-image-icon Скачать
+
+				.seller__content
+					.seller__title Хочешь стать дистрибьютером?
+					.seller__text С момента создания компании Valvoline доктором Джоном Эллисом в 1866 году мир сильно изменился.
+					a(href="#").seller__mail valvolineeuropemarketing@valvoline.com.
+					a(href="#").seller__list Полный список документов для потенциальных дистрибьюторов
+
+
+
+
+
+
+
+
+
+
+

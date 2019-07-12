@@ -1,0 +1,16 @@
+extends layout-inner
+
+block title
+	title 404
+
+block content
+	
+	.not-found
+		.container
+			.not-found__row
+				.not-found__value(data-aos='fade-up' data-aos-delay="0") 404
+				.not-found__content
+					.not-found__title(data-aos='fade-up' data-aos-delay="100") Страница не найдена
+					.not-found__text(data-aos='fade-up' data-aos-delay="200") Неправильно набран адрес, или такой страницы на сайте больше не существует.
+					.not-found__btn(data-aos='fade-up' data-aos-delay="300")
+						a(href="#").button.button--red-transp.button-compact Вернуться на главную

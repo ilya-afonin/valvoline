@@ -1,0 +1,37 @@
+@media screen and (max-width: 1499px) {
+
+	.art-slider {
+
+		&__slide {
+			padding: 70px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.art-slider {
+		margin-bottom: 100px;
+
+		&__slide {
+			padding: 70px 15px;
+		}
+
+		&__title {
+			font-size: 36px;
+			line-height: 43px;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		&__button {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__counter {
+			right: 50%;
+			transform: translateX(50%);
+		}
+	}
+}

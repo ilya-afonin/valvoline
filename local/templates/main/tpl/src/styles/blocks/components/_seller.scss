@@ -1,0 +1,155 @@
+.seller {
+	padding: 85px 0;
+
+	&__row {
+		display: flex;
+	}
+
+	&__card {
+		width: 630px;
+		flex-shrink: 0;
+		position: relative; 
+		padding: 75px 0 75px 220px;
+
+		&:hover {
+
+			.seller__card {
+
+				&-image {
+
+					&-file {
+						filter: blur(6px);
+					}
+
+					&-icon {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 145px;
+			bottom: 0;
+			z-index: -1;
+			background-color: #EEE;
+		}
+
+		&-name {
+			@extend .p-card__name;
+		}
+
+		&-image {
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0px 15px 41px rgba(0, 0, 0, 0.1);
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 2;
+				background-color: #111820;
+				opacity: .2;
+			}
+
+			&-file {
+				z-index: 1;
+				position: relative;
+				transition: filter .3s;
+			}
+
+			&-link {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 5;
+			}
+
+			&-icon {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 2;
+				color: #fff;
+				font-size: 24px;
+				text-align: center;
+				opacity: 0;
+				transition: opacity .3s;
+
+				&:before {
+					content: '';
+					display: block;
+					width: 65px;
+					height: 81px;
+					margin: 0 auto 20px auto;
+					background-image: url(../images/static/icon-load.svg);
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 95px;
+	}
+
+	&__title {
+		font-size: 72px;
+		line-height: 86px;
+		font-weight: 700;
+		margin-bottom: 50px;
+		color: #111820; 
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 36px;
+		color: #111820;
+		margin-bottom: 60px;
+	}
+
+	&__mail {
+		color: #F33;
+		font-size: 30px;
+		line-height: 1;
+		margin-bottom: 20px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	&__list {
+		position: relative;
+		padding-left: 45px;
+		font-size: 20px;
+		color: #F33;
+		text-decoration: none;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 25px;
+			height: 32px;
+			transform: translateY(-50%);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url(../images/static/list.svg);
+		}
+	}
+}

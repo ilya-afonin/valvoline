@@ -1,0 +1,13 @@
+// @include font-face(some-font, "../fonts/some-font/ExtraBold/some-font-Extrabold", 900, normal, eot woff ttf svg);
+
+// @include font-face(some-font, "../fonts/some-font/Regular/some-font-Regular", 400, normal, eot woff ttf svg);
+
+// @include font-face(some-font, "../fonts/some-font/Light/some-font-Light", 300, normal, eot woff ttf svg);
+
+// @include font-face(some-font, "../fonts/some-font/ExtraLight/some-font-ExtraLight", 100, normal, eot woff ttf svg);
+
+@include font-face(Helvetica, "../fonts/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman", 400, normal, eot woff ttf otf);
+
+@include font-face(Helvetica, "../fonts/HelveticaNeueCyr/Medium/HelveticaNeueCyr-Medium", 500, normal, eot woff ttf otf);
+
+@include font-face(Helvetica, "../fonts/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold", 700, normal, eot woff ttf otf);

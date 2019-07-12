@@ -1,0 +1,1 @@
+<?$MESS['ZAPIS'] = 'To make an appointment'?>

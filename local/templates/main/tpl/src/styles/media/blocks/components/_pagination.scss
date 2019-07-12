@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+
+	.pagination {
+		padding: 10px 0 40px 0;
+
+		&__link {
+			font-size: 20px;
+			margin: 0 15px;
+
+			&--prev,
+			&--next {
+				width: 6px;
+				height: 24px;
+				position: relative;
+				color: transparent;
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 6px;
+					height: 12px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-image: url(../images/static/pag-arr.svg);
+				}
+			}
+
+			&--prev {
+				&:before {
+					
+				}
+			}
+
+			&--next {
+				&:before {
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+		}
+	}
+}
