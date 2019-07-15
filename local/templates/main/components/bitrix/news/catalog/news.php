@@ -92,4 +92,5 @@ $APPLICATION->IncludeComponent(
     ),
     $component
 ); ?>
+
     </div>

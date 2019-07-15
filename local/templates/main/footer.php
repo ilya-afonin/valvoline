@@ -112,66 +112,10 @@ endif; ?>
 <?
 $assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/scripts.min.js');
 if ($APPLICATION->GetCurDir() === '/map/'){
-    $assets->addJs("https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js", true);
+    //$assets->addJs("https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js", true);
+    $assets->addJs("https://api-maps.yandex.ru/2.1/?apikey=84a92d20-09e9-4790-b052-4fc458cb7f38&lang=ru_RU", true);
 }
 ?>
-
-
-<?if(1==0):?>
-<footer class="footer<?=(ERROR_404 == 'Y')?' footer--fullpage':''?>">
-  <div class="footer__top">
-    <div class="container">
-      <div class="footer__top-row row wow fadeIn">
-        <div class="footer__top-item footer__address col-md-3 col-12">
-          <div class="footer__top-title"><?=Loc::getMessage('ADDR')?></div>
-          <div class="footer__top-text"><?= \COption::GetOptionString("askaron.settings", "UF_ADDRESS"); ?></div>
-        </div>
-        <div class="footer__top-item footer__phone col-md-3 col-6">
-          <div class="footer__top-title"><?=Loc::getMessage('PHONE')?></div>
-          <? $phone = Main::getPhoneLink(\COption::GetOptionString("askaron.settings", "UF_PHONE")); ?>
-          <a class="footer__top-text" href="<?=$phone?>"><?= \COption::GetOptionString("askaron.settings", "UF_PHONE"); ?></a>
-        </div>
-        <div class="footer__top-item footer__email col-md-3 col-6">
-          <div class="footer__top-title"><?=Loc::getMessage('MAIL')?></div>
-          <a class="footer__top-text" href="mailto:<?= \COption::GetOptionString("askaron.settings", "UF_MAIL"); ?>"><?= \COption::GetOptionString("askaron.settings", "UF_MAIL"); ?></a>
-        </div>
-        <div class="footer__top-item footer__social col-md-3 col-12">
-          <div class="footer__top-title"><?=Loc::getMessage('SOCIAL')?></div>
-          <div class="footer__top-text">
-              <?
-                  $obEnum = new \CUserFieldEnum;
-                  $rsEnum = $obEnum->GetList(array("SORT" => "ASC"), array("USER_FIELD_ID" => 4));
-
-              $socials = array();
-                  while($arEnum = $rsEnum->Fetch())
-                  {
-                      $socials[] = $arEnum;
-                  }
-                    foreach($socials as $soc){?>
-                        <a href="<?=$soc['VALUE']?>"><?=$soc['XML_ID']?></a>
-                   <? }
-              ?>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <div class="container">
-      <div class="footer__bottom-row row wow fadeIn"> 
-        <div class="footer__copyright col-md-<?=(ERROR_404 == 'Y')?'4':'3'?> col-12">
-          <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/copyright.php", Array(), Array("MODE" => "text")); ?>
-        </div>
-        <div class="col-md-<?=(ERROR_404 == 'Y')?'5':'6'?> col-12">
-           <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/policy.php", Array(), Array("MODE" => "php")); ?>
-        </div>
-        <div class="footer__creator col-md-3 col-12"><?=Loc::getMessage('CREATING')?> –&nbsp;<a href="https://de-us.ru" target="_blank">DEUS</a></div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</div>
-<?endif;?>
 
 </body>
 </html>

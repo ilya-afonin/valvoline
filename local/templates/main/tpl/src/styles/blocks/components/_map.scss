@@ -34,8 +34,8 @@
 			bottom: calc(100% - -147px);
 			left: 50%;
 			transform: translateX(-50%);
-			opacity: 0;
-			visibility: hidden;
+			/*opacity: 0;
+			visibility: hidden;*/
 			transition: opacity .3s, visibility .3s;
 
 			&:after {

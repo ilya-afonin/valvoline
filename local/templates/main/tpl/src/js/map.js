@@ -3,7 +3,7 @@
 function map() {
 	if ($('#map').length > 0) {
 
-		var dlat = 0,
+		/*var dlat = 0,
 		    dlng = 0;
 
 		var offices = [{
@@ -90,7 +90,7 @@ function map() {
     		if (!container.is(e.target) && container.has(e.target).length === 0) {
       			$('.mapboxgl-marker').removeClass('is-opened')
     		}
-		});
+		});*/
 
 	}
 }

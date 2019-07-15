@@ -29,7 +29,8 @@ $APPLICATION->SetTitle("Продукция");
 		"DETAIL_FIELD_CODE" => array(
 			0 => "PREVIEW_PICTURE",
 			1 => "DETAIL_TEXT",
-			2 => "PREVIEW_TEXT "
+			2 => "PREVIEW_TEXT ",
+			3 => "",
 		),
 		"DETAIL_PAGER_SHOW_ALL" => "N",
 		"DETAIL_PAGER_TEMPLATE" => "",
@@ -62,7 +63,7 @@ $APPLICATION->SetTitle("Продукция");
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"NEWS_COUNT" => "100",
+		"NEWS_COUNT" => "9",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",

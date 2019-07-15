@@ -148,3 +148,13 @@ p {
 	pointer-events: none;
 	opacity: 0;
 }
+
+.ymaps-2-1-74-ground-pane {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+/*
+.map a:not(.baloon__link) {
+	display: none !important;
+}*/

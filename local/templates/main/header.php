@@ -33,8 +33,9 @@ Loc::loadMessages(__FILE__);
 </head>
 
 <body>
-<div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
+
 <div class="page">
+  <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
     <div class="header" data-aos="fade-down">
         <div class="container">
             <div class="header__row">

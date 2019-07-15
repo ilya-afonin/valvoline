@@ -25,7 +25,7 @@ global $APPLICATION;
             </div>
         </div>
         <div class="m-cont__button">
-            <a class="button button--red button--compact" href="#">Показать на карте</a></div>
+            <a class="button button--red button--compact" href="/map/">Показать на карте</a></div>
         <div class="m-cont__stats">
             <div class="m-cont__stat">
                 <div class="m-cont__stat-value">

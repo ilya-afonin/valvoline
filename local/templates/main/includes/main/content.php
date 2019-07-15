@@ -2,7 +2,7 @@
 <?php
 global $APPLICATION;
 ?>
-<div class="m-content-wrapper" id="about">
+<div class="m-content-wrapper">
     <div class="m-content">
         <div class="m-content__promo">
             <div class="m-content__promo-card">

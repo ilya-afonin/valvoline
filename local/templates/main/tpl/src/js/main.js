@@ -1,3 +1,6 @@
+let arPoints;
+App = {};
+
 $(document).ready(function () {
 
 	wSlider();
@@ -31,6 +34,131 @@ $(document).ready(function () {
     //anchors();
 
     ajaxMore();
+
+	if ($('#map').length > 0) {
+		App.points.init(arPoints);
+	}
+});
+
+App.points = {
+	data: null,
+	initial: null,
+	marker: null,
+	map: null,
+	filterUrl: null,
+	init: function (config) {
+		App.points.data = config['groups'];
+		App.points.initial = config['initial'];
+		App.points.marker = config['marker'];
+		App.points.filterUrl = config['filterUrl'];
+
+		//App.points.onSelectPoint();
+
+	},
+	initMap: function () {
+		App.points.map = new ymaps.Map("map", {
+			center: [55.807304, 37.583688],
+			zoom: 11,
+			controls: []
+		});
+		App.points.map.behaviors.disable('scrollZoom');
+		//App.points.map.controls.geoObjects.add('zoomControl', {right: '0', top: '5px'});
+
+		if (App.points.initial) {
+			ymaps.geocode(App.points.initial)
+				.then(function (res) {
+					App.points.map.panTo(res.geoObjects.get(0).geometry.getCoordinates());
+				});
+		}
+		App.points.addpoints();
+	},
+	addpoints: function () {
+		App.points.map.geoObjects.removeAll();
+		//console.log(App.points);
+		App.points.data.forEach(function (group) {
+
+			group['points'].forEach(function (point) {
+				var placemark = new ymaps.Placemark(
+					point.coords.map(function (x) {
+						return parseFloat(x)
+					}),
+					{
+						balloonContentBody: '<div class="marker__descr"> ' +
+							'<div class="marker__descr-name">' + point.name + '</div> ' +
+							'<div class="marker__descr-content">' +
+							'Телефон: <span>' + point.phone + '</span><br/>' +
+							'Почта: <span>' + point.email + '</span><br/>' +
+							'Адрес: <span>' + point.address + '</span>' +
+							//'Сайт: <span>' + point.site + '</span>' +
+							'</div>  ' +
+							'</div>'
+					},
+					{
+						iconLayout: 'default#image',
+						iconImageHref: App.points.marker,
+						iconImageSize: [72, 62]
+					}
+				);
+				placemark.properties.set('address', point.address);
+				App.points.map.geoObjects.add(placemark);
+			});
+		});
+
+		/*if (App.points.initial) {
+            var tmp = $('#cities-list option[value="' + App.points.initial + '"]');
+            if (tmp.length) {
+                tmp.attr('selected', '');
+            }
+        }
+        $('.select-point').trigger('refresh');*/
+	},
+	onSelectPoint: function () {
+
+		var $that = $(this);
+
+		//var section_id = $that.find('').val();
+		var section_name = $that.find('.m-cont__title-checked-name').text();
+
+		$.ajax({
+			url: window.location.href,
+			data: {
+				//city_id: section_id,
+				city_name: section_name
+			},
+			type: 'GET',
+			dataType: 'html',
+			success: function (data) {
+
+				$("#routes-list").hide();
+				$(".ajax-script").remove();
+				$("#routes-list").html(data);
+				$("#routes-list").fadeIn();
+
+				App.points.init(arPoints);
+
+				if (App.points.initial) {
+					ymaps.geocode(App.points.initial)
+						.then(function (res) {
+							App.points.map.panTo(res.geoObjects.get(0).geometry.getCoordinates(), {flying: false});
+						});
+				}
+
+				App.points.addpoints();
+
+
+			}
+
+		});
+
+	}
+};
+
+
+
+$(window).on('load', function () {
+	if ($('#map').length > 0) {
+		ymaps.ready(App.points.initMap);
+	}
 });
 
 const wSlider = () => {
@@ -222,21 +350,22 @@ const pSlider = () => {
             $('.p-slider__slide').each(function(){
 
                 if($(this).hasClass('active') ){
-                    console.log($(this));
                     indx = $(this).data('index');
-                    console.log(indx+1);
 
                     clearInterval(timer);
 
                     $('.owl-item').not('.active').removeClass('animated bounceInRight');
                     $(this).parent().addClass('animated bounceInRight');
 
-                    that.trigger("to.owl.carousel", [3,1]);
-
                     let timer = setTimeout(function () {
-                        $('.owl-item').not('.active').removeClass('animated bounceInRight')
+                        $('.owl-item').not('.active').removeClass('animated bounceInRight');
                         clearInterval(timer)
-                    }, 1000)
+                    }, 1000);
+
+					setTimeout(function () {
+						$('.p-slider__scene').trigger('to.owl.carousel', indx);
+
+					},100)
 
                 }
 
@@ -245,45 +374,47 @@ const pSlider = () => {
 	});
 
 	$('body').on('click', '.p-slider__arr--next', function () {
+
+		updateSlider();
+
+	});
+
+	$('body').on('click', '.p-slider__arr--prev', function () {
+		updateSlider();
+	});
+
+	function updateSlider() {
+
 		clearInterval(timer)
 		$('.owl-item').not('.active').removeClass('animated bounceInRight')
 		$('.owl-item.active').addClass('animated bounceInRight')
 
 		let timer = setTimeout(function () {
 			$('.owl-item').not('.active').removeClass('animated bounceInRight')
-
-
-
-        $.ajax({
-            type: "POST",
-            url: url,
-            dataType: "html",
-            data: {'id': $('.owl-item.active').find('.p-slider__slide').data('id')},
-            cache: false,
-            error: function () {
-                console.log("Error loading more");
-            },
-            success: function (loadHtml) {
-                //window.history.pushState({page: url}, null, url);
-                $('.product-cards').find('.js-show-more').remove();
-                $('.product-cards__row').append(loadHtml);
-            }
-        });
-            clearInterval(timer)
-        }, 1000)
-
-	})
-
-	$('body').on('click', '.p-slider__arr--prev', function () {
-		clearInterval(timer)
-		$('.owl-item').not('.active').removeClass('animated bounceInLeft')
-		$('.owl-item.active').addClass('animated bounceInLeft')
-
-		let timer = setTimeout(function () {
-			$('.owl-item').not('.active').removeClass('animated bounceInLeft')
 			clearInterval(timer)
 		}, 1000)
-	})
+
+		$.ajax({
+			type: "POST",
+			url: window.location.href,
+			dataType: "html",
+			data: {'id': $('.owl-item.active').find('.p-slider__slide').data('id')},
+			cache: false,
+			error: function () {
+				console.log("Error loading more");
+			},
+			success: function (loadHtml) {
+				//window.history.pushState({page: url}, null, url);
+				$('.product-cards').find('.js-show-more').remove();
+				$('#product-container').html(loadHtml);
+
+
+			},
+			complete: function () {
+				$('.scrollbar').mCustomScrollbar();
+			}
+		});
+	}
 }
 
 const scrollbar = () => {
@@ -357,9 +488,9 @@ const firstScreen = () => {
 
 			let scrolled = $(window).scrollTop()
 
-			if (scrolled < startOffset) {
+			if (scrolled <= startOffset) {
 
-				let percent = 1 - (scrolled / startOffset);
+				let percent = 1 - (scrolled / startOffset)
 
 				overlay.css({
 					opacity: percent
@@ -368,8 +499,8 @@ const firstScreen = () => {
 				content.css({
 					'top': '0',
 					'position': 'fixed',
-				    'left': '50%',
-    				'transform': 'translateX(-50%)'
+					'left': '50%',
+					'transform': 'translateX(-50%)'
 				})
 
 				welcome.css({
@@ -381,13 +512,14 @@ const firstScreen = () => {
 				welcome.css({
 					'margin-bottom': '0px'
 				})
+				content.removeAttr('style')
 				$(".m-content__promo").stick_in_parent();
 
 				overlay.css({
 					opacity: '0'
 				})
 			}
-			
+
 		})
 	}
 }
@@ -414,6 +546,7 @@ const firstScreen = () => {
     });
 
 };   */
+
 Share = {
     vkontakte: function(purl, ptitle, pimg, text) {
         url  = 'http://vk.com/share.php?';
@@ -474,13 +607,14 @@ const ajaxMore = () => {
 
     $('body').on('click', '.js-show-more', function (e) {
         e.preventDefault();
-        let url = $(this).attr("href");
+        let url_more = $(this).attr("href");
 
         $.ajax({
             type: "POST",
-            url: url,
+            url: url_more,
             dataType: "html",
             cache: false,
+			data: {'id': $('.owl-item.active').find('.p-slider__slide').data('id')},
             error: function () {
                 console.log("Error loading more");
             },
