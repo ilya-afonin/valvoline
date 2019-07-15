@@ -14,13 +14,13 @@ Loc::loadMessages(__FILE__);
         <div class="footer__row">
             <div class="footer__col footer__col--copy">
                 <div class="footer__text">
-                    <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/copyright.php", Array(), Array("MODE" => "text")); ?>
+                    <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/footer/copyright.php", Array(), Array("MODE" => "text")); ?>
                 </div>
             </div>
             <div class="footer__col footer__col--soc">
                 <div class="footer__item">
                     <div class="footer__text">
-                        <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/social.php", Array(), Array("MODE" => "text")); ?>
+                        <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/footer/social.php", Array(), Array("MODE" => "text")); ?>
                     </div>
                     <?$APPLICATION->IncludeComponent("bitrix:news.list", "socials-footer", Array(
 	"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
@@ -89,7 +89,7 @@ Loc::loadMessages(__FILE__);
             <div class="footer__col footer__col--apps">
                 <div class="footer__item">
                     <div class="footer__text">
-                        <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/download.php", Array(), Array("MODE" => "text")); ?>
+                        <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/footer/download.php", Array(), Array("MODE" => "text")); ?>
                     </div>
                     <div class="footer__icons">
                         <a class="footer__icon" href="#" style="background-image:url(<?=SITE_TEMPLATE_PATH?>/tpl/dist/assets/images/static/footer-appstore.svg)"></a>
@@ -104,6 +104,11 @@ Loc::loadMessages(__FILE__);
     </div>
 </footer>
 </div>
+<? //$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/popups.php", Array(), Array("MODE" => "html")); ?>
+
+<? if ((!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false) || !$USER->IsAdmin()):
+    //$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include/yandex_metrika.php", Array(), Array("MODE" => "html"));
+endif; ?>
 <?
 $assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/scripts.min.js');
 if ($APPLICATION->GetCurDir() === '/map/'){
@@ -112,7 +117,7 @@ if ($APPLICATION->GetCurDir() === '/map/'){
 ?>
 
 
-
+<?if(1==0):?>
 <footer class="footer<?=(ERROR_404 == 'Y')?' footer--fullpage':''?>">
   <div class="footer__top">
     <div class="container">
@@ -165,39 +170,8 @@ if ($APPLICATION->GetCurDir() === '/map/'){
   </div>
 </footer>
 
-<? //$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/popups.php", Array(), Array("MODE" => "html")); ?>
-
 </div>
+<?endif;?>
 
-
-
-<? if ((!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false) || !$USER->IsAdmin()):
-  //$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/include/yandex_metrika.php", Array(), Array("MODE" => "html"));
-endif; ?>
-
-<?
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/jquery-3.1.1.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/mobile-detect.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/iphone-inline-video.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/jquery.splitlines.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/jquery.mCustomScrollbar.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/smooth-scroll.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/smooth-scrollbar.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/ScrollMagic.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/jquery.ScrollMagic.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/validate.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/mask.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/youtube.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/owl.carousel.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/swiper.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/dropzone.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/jquery.countimator.min.js');
-//$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/main.js');
-if ($APPLICATION->GetCurDir() === '/contacts/'){
-  $assets->addJs("https://api-maps.yandex.ru/2.1/?apikey=e46d1f7f-fedf-4ef6-9b07-4fcc97c75d87&lang=ru_RU", true);
-}
-$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/lib/jquery-3.1.1.min.js');
-$assets->addJs(SITE_TEMPLATE_PATH . '/tpl/dist/assets/js/scripts.min.js');
-?>
 </body>
 </html>

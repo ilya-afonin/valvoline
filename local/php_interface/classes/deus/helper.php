@@ -2,7 +2,13 @@
 
 namespace Deus\Helpers;
 
+use Bitrix\Main\IO\File;
+use Bitrix\Main\Context;
+use Bitrix\Main\Application;
+
 class Main {
+
+    private static $includePath = "/local/templates/main/includes/";
 
     public static function getEnding($number, $words){
         $number = $number % 100;
@@ -46,5 +52,38 @@ class Main {
         return $arrayFio[0].' '.$name.'. '.$second.'.';
     }
 
-    
+    public static function getCurrentPage()
+    {
+        $page = "text";
+        $request = Context::getCurrent()->getRequest();
+        $dir =  $request->getRequestedPageDirectory();
+
+        if (defined("ERROR_404")) {
+            $page = "404";
+        } elseif (!$dir) {
+            $page = "main";
+        } elseif ($request->get("pageType")) {
+            $page = $request->get("pageType");
+        } elseif (defined("PAGE_CLASS")) {
+            $page = PAGE_CLASS;
+        }
+        if (mb_strpos($dir, '/catalog/apartment/') !== false) {
+            $page = "apartment";
+        }
+
+        return $page;
+    }
+
+    public static function includeFile($file)
+    {
+        $path = Application::getDocumentRoot(). self::$includePath . $file . ".php";
+        if (File::isFileExists($path)) {
+            include($path);
+        }
+    }
+
+    public static function asset($file)
+    {
+        return SITE_TEMPLATE_PATH . "/assets/" . $file;
+    }
 }

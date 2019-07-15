@@ -19,19 +19,17 @@ $APPLICATION->SetTitle("404 Not Found");
 );*/?>
 
 
-        <div class="error__page">
-          <div class="e-page__left">
-            <div class="e-page__left-image-wrapper"><img class="e-page__left-image" src="/local/templates/main/tpl/dist/assets/images/content/light.png" alt="Страница не найдена"></div>
-          </div>
-          <div class="e-page__right">
-            <div class="e-page__text">
-              <div class="e-page__title">404</div>
-              <div class="e-page__description">Страница не найдена :(</div><a class="e-page__link btn" href="/">
-                Вернуться на главную<svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.5 14L8 7.5L1.5 0.999999" stroke="#EA1E30" stroke-width="2"/>
-</svg></a>
+    <div class="not-found">
+        <div class="container">
+            <div class="not-found__row">
+                <div class="not-found__value" data-aos="fade-up" data-aos-delay="0">404</div>
+                <div class="not-found__content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="not-found__title">Страница не найдена</div>
+                    <div class="not-found__text">Неправильно набран адрес, или такой страницы на сайте больше не существует.</div>
+                    <div class="not-found__btn"><a class="button button--red-transp button-compact" href="/">Вернуться на главную</a></div>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

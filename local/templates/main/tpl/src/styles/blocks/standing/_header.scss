@@ -208,31 +208,38 @@
 					transform: translateY(0);
 
 					&:nth-child(1) {
-						transition-delay: .4s;
+						transition-property: opacity, transform;
+						transition-delay: .4s, .4s;
 					}
 
 					&:nth-child(2) {
-						transition-delay: .5s;
+						transition-property: opacity, transform;
+						transition-delay: .5s, .5s;
 					}
 
 					&:nth-child(3) {
-						transition-delay: .6s;
+						transition-property: opacity, transform;
+						transition-delay: .6s, .6s;
 					}
 
 					&:nth-child(4) {
-						transition-delay: .7s;
+						transition-property: opacity, transform;
+						transition-delay: .7s, .7s;
 					}
 
 					&:nth-child(5) {
-						transition-delay: .8s;
+						transition-property: opacity, transform;
+						transition-delay: .8s, .8s;
 					}
 
 					&:nth-child(6) {
-						transition-delay: .9s;
+						transition-property: opacity, transform;
+						transition-delay: .9s, .9s;
 					}
 
 					&:nth-child(7) {
-						transition-delay: 1s;
+						transition-property: opacity, transform;
+						transition-delay: 1s, 1s;
 					}
 				}
 
@@ -291,6 +298,11 @@
 			&.is-active {
 				border-bottom: 3px solid #000;
 			}
+
+			&:hover {
+				color: #FF3333;
+			}
+
 		}
 	}
 }

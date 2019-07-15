@@ -1,0 +1,4 @@
+<?
+$MESS["ARTURGOLUBEV_YANDEXSHARE_PANELQ_RASSARIVANIA"] = "Кнопки поделиться";
+$MESS["ARTURGOLUBEV_YANDEXSHARE_GROUP_NAME"] = "Дополнительные возможности";
+?>

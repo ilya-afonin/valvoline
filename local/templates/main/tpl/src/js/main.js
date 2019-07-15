@@ -27,6 +27,10 @@ $(document).ready(function () {
 	mContTabs();
 
 	firstScreen();
+
+    //anchors();
+
+    ajaxMore();
 });
 
 const wSlider = () => {
@@ -39,9 +43,10 @@ const wSlider = () => {
 
 		$('.w-slider__slide').each(function () {
 
-			let index = $(this).index()
-			$(this).attr('data-index', index)
-		})
+			let index = $(this).index();
+			$(this).attr('data-index', index);
+
+		});
 
 
 
@@ -165,10 +170,20 @@ const header = () => {
 
 	$('body').on('click', '.header__burger', function () {
 
-		$(this).toggleClass('is-opened')
-		$('.header__menu').toggleClass('is-opened')
+		$(this).toggleClass('is-opened');
+		$('.header__menu').toggleClass('is-opened');
 		$('.header__logo').toggleClass('is-active')
-	})
+	});
+
+    $('body').on('click', '.header__nav-link', function () {
+
+        $('.header__burger').removeClass('is-opened');
+        $('.header__menu').removeClass('is-opened');
+        $('.header__logo').removeClass('is-active');
+
+    });
+
+
 }
 
 const mCont = () => {
@@ -193,15 +208,41 @@ const mCont = () => {
 
 const pSlider = () => {
 
-	$('.p-slider__scene').owlCarousel({
+     $('.p-slider__scene').owlCarousel({
 		items: 1,
 	 	nav: true,
 	 	navText: '',
 	 	loop: true,
 	 	navClass: ['p-slider__arr p-slider__arr--prev', 'p-slider__arr p-slider__arr--next'],
-	 	navElement: 'a'
+	 	navElement: 'a',
 	 	// mouseDrag: false
-	})
+        onInitialize: function() {
+            let indx;
+            let that = $(this);
+            $('.p-slider__slide').each(function(){
+
+                if($(this).hasClass('active') ){
+                    console.log($(this));
+                    indx = $(this).data('index');
+                    console.log(indx+1);
+
+                    clearInterval(timer);
+
+                    $('.owl-item').not('.active').removeClass('animated bounceInRight');
+                    $(this).parent().addClass('animated bounceInRight');
+
+                    that.trigger("to.owl.carousel", [3,1]);
+
+                    let timer = setTimeout(function () {
+                        $('.owl-item').not('.active').removeClass('animated bounceInRight')
+                        clearInterval(timer)
+                    }, 1000)
+
+                }
+
+            });
+        }
+	});
 
 	$('body').on('click', '.p-slider__arr--next', function () {
 		clearInterval(timer)
@@ -210,8 +251,27 @@ const pSlider = () => {
 
 		let timer = setTimeout(function () {
 			$('.owl-item').not('.active').removeClass('animated bounceInRight')
-			clearInterval(timer)
-		}, 1000)
+
+
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            dataType: "html",
+            data: {'id': $('.owl-item.active').find('.p-slider__slide').data('id')},
+            cache: false,
+            error: function () {
+                console.log("Error loading more");
+            },
+            success: function (loadHtml) {
+                //window.history.pushState({page: url}, null, url);
+                $('.product-cards').find('.js-show-more').remove();
+                $('.product-cards__row').append(loadHtml);
+            }
+        });
+            clearInterval(timer)
+        }, 1000)
+
 	})
 
 	$('body').on('click', '.p-slider__arr--prev', function () {
@@ -267,8 +327,7 @@ const mContTabs = () => {
 		$('.m-cont__tabs-button').removeClass('is-active')
 		$(this).addClass('is-active')
 
-		let type = $(this).attr('data-tab')
-		console.log(type)
+		let type = $(this).attr('data-tab');
 
 		$('.m-cont__tabs-content-item').fadeOut(300, function () {
 
@@ -279,7 +338,7 @@ const mContTabs = () => {
 	$('.m-cont__tabs-content').mCustomScrollbar();
 
 	$('.m-cont__tabs-opener').on('click', function () {
-		$(this).toggleClass('is-active')
+		$(this).toggleClass('is-active');
 		$('.m-cont__tabs-content').slideToggle()
 	})
 }
@@ -300,8 +359,7 @@ const firstScreen = () => {
 
 			if (scrolled < startOffset) {
 
-				let percent = 1 - (scrolled / startOffset) 
-				console.log(percent)
+				let percent = 1 - (scrolled / startOffset);
 
 				overlay.css({
 					opacity: percent
@@ -323,7 +381,6 @@ const firstScreen = () => {
 				welcome.css({
 					'margin-bottom': '0px'
 				})
-				content.removeAttr('style')
 				$(".m-content__promo").stick_in_parent();
 
 				overlay.css({
@@ -335,5 +392,104 @@ const firstScreen = () => {
 	}
 }
 
+/*const anchors = () => {
 
+    $(function () {
+        $('.scroll').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $($(this).attr('href')).offset().top + 'px'
+            }, 1100, 'swing');
 
+        });
+
+        if (window.location.hash) {
+
+            // smooth scroll to the anchor id
+            $('html,body').animate({
+                scrollTop: $(window.location.hash).offset().top + 'px'
+            }, 1100, 'swing');
+
+        }
+    });
+
+};   */
+Share = {
+    vkontakte: function(purl, ptitle, pimg, text) {
+        url  = 'http://vk.com/share.php?';
+        url += 'url=http://'          + encodeURIComponent(purl);
+        url += '&title='       + encodeURIComponent(ptitle);
+        Share.popup(url);
+    },
+    odnoklassniki: function(purl, text) {
+        url  = 'http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1';
+        url += '&st.comments=' + encodeURIComponent(text);
+        url += '&st._surl='    + encodeURIComponent(purl);
+        Share.popup(url);
+    },
+    facebook: function(purl, ptitle, pimg, text) {
+        url  = 'http://www.facebook.com/sharer.php?';
+        url += 'u='       + encodeURIComponent(purl);
+        url += '&title='     + encodeURIComponent(ptitle);
+        url += '&description='   + encodeURIComponent(text);
+        url += '&picture=' + encodeURIComponent(pimg);
+        Share.popup(url);
+    },
+    telegram: function(purl, ptitle, pimg, text) {
+        url  = 'https://telegram.me/share/url?';
+        url += 'url='          + encodeURIComponent(purl);
+        url += '&text='       + encodeURIComponent(ptitle);
+        url += '&description=' + encodeURIComponent(text);
+        url += '&image='       + encodeURIComponent(pimg);
+        url += '&noparse=true';
+        Share.popup(url);
+    },
+    twitter: function(purl, ptitle) {
+        url  = 'http://twitter.com/share?';
+        url += 'text='      + encodeURIComponent(ptitle);
+        url += '&url='      + encodeURIComponent(purl);
+        url += '&counturl=' + encodeURIComponent(purl);
+        Share.popup(url);
+    },
+    mailru: function(purl, ptitle, pimg, text) {
+        url  = 'http://connect.mail.ru/share?';
+        url += 'url='          + encodeURIComponent(purl);
+        url += '&title='       + encodeURIComponent(ptitle);
+        url += '&description=' + encodeURIComponent(text);
+        url += '&imageurl='    + encodeURIComponent(pimg);
+        Share.popup(url)
+    },
+    google: function(purl) {
+        url  = 'https://plus.google.com/share?';
+        url += 'url='          + encodeURIComponent(purl);
+        Share.popup(url)
+    },
+
+    popup: function(url) {
+        window.open(url,'','toolbar=0,status=0,width=626,height=436');
+    }
+};
+
+const ajaxMore = () => {
+
+    $('body').on('click', '.js-show-more', function (e) {
+        e.preventDefault();
+        let url = $(this).attr("href");
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            dataType: "html",
+            cache: false,
+            error: function () {
+                console.log("Error loading more");
+            },
+            success: function (loadHtml) {
+                //window.history.pushState({page: url}, null, url);
+                $('.product-cards').find('.js-show-more').remove();
+                $('.product-cards__row').append(loadHtml);
+            }
+        });
+    });
+
+};

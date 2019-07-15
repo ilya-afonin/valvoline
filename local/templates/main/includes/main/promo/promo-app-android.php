@@ -1,0 +1,1 @@
+Доступно в  <span>Google Play</span>

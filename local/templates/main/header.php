@@ -1,9 +1,17 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Page\Asset;
+use Bitrix\Main\IO\File;
+use Bitrix\Main\Application;
+use Deus\Helpers\Main;
 
-$assets = \Bitrix\Main\Page\Asset::getInstance();
+$dir = $APPLICATION->GetCurDir();
+$page = Main::getCurrentPage();
+$assets = Asset::getInstance();
+
 Loc::loadMessages(__FILE__);
+
 ?>
 <!DOCTYPE html>
 <html lang="<?= LANGUAGE_ID; ?>">
@@ -16,11 +24,6 @@ Loc::loadMessages(__FILE__);
     <meta http-equiv="X-UA-Compatible&quot;,content=&quot;IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="128x128" href="<?=SITE_TEMPLATE_PATH?>/tpl/dist/images/static/favicons/128x128.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="<?=SITE_TEMPLATE_PATH?>/tpl/dist/images/static/favicons/64x64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?=SITE_TEMPLATE_PATH?>/tpl/dist/images/static/favicons/32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?=SITE_TEMPLATE_PATH?>/tpl/dist/images/static/favicons/16x16.png">
-
     <?
     $assets->addCss(SITE_TEMPLATE_PATH . "/tpl/dist/assets/css/styles.css");
     $assets->addCss('https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css');
@@ -29,18 +32,16 @@ Loc::loadMessages(__FILE__);
     ?>
 </head>
 
-
 <body>
-
+<div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
 <div class="page">
-    <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
     <div class="header" data-aos="fade-down">
         <div class="container">
             <div class="header__row">
                 <div class="header__logo">
-                    <a class="header__logo-link" href=""></a>
-                    <img class="header__logo-white" src="<?=\COption::GetOptionString( "askaron.settings", "UF_LOGO_WHITE" );?>" alt="Logo">
-                    <img class="header__logo-color" src="<?=\COption::GetOptionString( "askaron.settings", "UF_LOGO" );?>" alt="Logo">
+                    <a class="header__logo-link" href="<?= ($APPLICATION->GetCurDir() !== '/') ? "/" : '' ?>"></a>
+                    <img class="header__logo-white" src="<?= CFile::GetPath(\COption::GetOptionString("askaron.settings", "UF_LOGO_WHITE")); ?>" alt="Logo">
+                    <img class="header__logo-color" src="<?= CFile::GetPath(\COption::GetOptionString("askaron.settings", "UF_LOGO")); ?>" alt="Logo">
                 </div>
                 <div class="header__burger">
                     <div class="header__burger-bar"></div>

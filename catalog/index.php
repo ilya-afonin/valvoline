@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Продукция");
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	"",
+	"catalog",
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -28,13 +28,14 @@ $APPLICATION->SetTitle("Продукция");
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
 		"DETAIL_FIELD_CODE" => array(
 			0 => "PREVIEW_PICTURE",
-			1 => "",
+			1 => "DETAIL_TEXT",
+			2 => "PREVIEW_TEXT "
 		),
 		"DETAIL_PAGER_SHOW_ALL" => "N",
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_TITLE" => "Страница",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
+			0 => "ATT_FASOVKA",
 			1 => "",
 		),
 		"DETAIL_SET_CANONICAL_URL" => "N",
@@ -46,7 +47,7 @@ $APPLICATION->SetTitle("Продукция");
 		"DISPLAY_TOP_PAGER" => "N",
 		"FILE_404" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "11",
+		"IBLOCK_ID" => "3",
 		"IBLOCK_TYPE" => "content",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
@@ -55,13 +56,13 @@ $APPLICATION->SetTitle("Продукция");
 			1 => "",
 		),
 		"LIST_PROPERTY_CODE" => array(
-			0 => "",
+			0 => "ATT_FASOVKA",
 			1 => "",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"NEWS_COUNT" => "5",
+		"NEWS_COUNT" => "100",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -88,7 +89,7 @@ $APPLICATION->SetTitle("Продукция");
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
-		"COMPONENT_TEMPLATE" => "cases",
+		"COMPONENT_TEMPLATE" => "catalog",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

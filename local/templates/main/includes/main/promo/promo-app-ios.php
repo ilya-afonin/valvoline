@@ -1,0 +1,1 @@
+Загрузите в <span>App Store</span>
