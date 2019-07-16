@@ -16,7 +16,7 @@ while ($sectRes = $dbResSect->GetNext()) {
 //Собираем  массив из Разделов и элементов
 foreach($arSections as $arSection){
   foreach($arResult["ITEMS"] as $key=>$arItem){
-    if($arItem['PROPERTY_ATT_CITIES_VALUE'] == $arSection['ID']){
+    if($arItem['PROPERTY_ATT_CITIES_VALUE'] == $arSection['ID'] || $arItem['IBLOCK_SECTION_ID'] == $arSection['ID']){
       $arSection['ELEMENTS'][] =  $arItem;
     }
   }
@@ -37,7 +37,7 @@ foreach ($arResult["SECTIONS"] as $arSec) {
         'id' => $arItem['ID'],
         'name' => $arItem['NAME'],
         'url' => $arItem['PROPERTY_ATT_SITE_VALUE'],
-        'address' => $arItem["PROPERTY_ATT_ADDRESS_VALUE"],
+        'address' => (($arItem["PROPERTY_ATT_CITY_VALUE"])?$arItem["PROPERTY_ATT_CITY_VALUE"].', ':'').$arItem["PROPERTY_ATT_ADDRESS_VALUE"],
         'phone' => $arItem["PROPERTY_ATT_PHONE_VALUE"],
         'email' => $arItem["PROPERTY_ATT_EMAIL_VALUE"],
         'coords' =>  [$arItem["PROPERTY_ATT_LAT_VALUE"], $arItem["PROPERTY_ATT_LNG_VALUE"]]
@@ -53,4 +53,3 @@ foreach ($arResult["SECTIONS"] as $arSec) {
   $arResult['POINTS'][] = $cities;
 
 }
-Debug::dtc($arResult['POINTS'], 'points');

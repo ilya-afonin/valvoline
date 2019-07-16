@@ -81,9 +81,18 @@
 					height: 20px;
 					top: 50%;
 					transform: translateY(-50%);
+					transition: transform .4s, top .4s;
 					background-position: center;
 					background-repeat: no-repeat;
 					background-image: url(../images/static/dropdown.svg);
+				}
+
+				&.is-active {
+
+					&:after {
+						top: calc(50% - 10px);
+						transform: rotate(180deg);
+					}
 				}
 			}
 		}
@@ -119,6 +128,7 @@
 			text-decoration: none;
 			display: block;
 			font-weight: 400;
+			cursor: pointer;
 
 			&:first-child {
 				padding-top: 0;
@@ -206,7 +216,7 @@
 		&-content {
 			display: none;
 			height: 300px;
-			overflow-y: scroll;
+			//overflow-y: scroll;
 
 			&-item {
 				display: none;
@@ -295,6 +305,7 @@
 				transition: color .3s;
 				text-decoration: none;
 				font-weight: 700;
+				cursor: pointer;
 
 				&:hover {
 					color: #F33;

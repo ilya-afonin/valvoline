@@ -58,11 +58,11 @@ App.points = {
 	initMap: function () {
 		App.points.map = new ymaps.Map("map", {
 			center: [55.807304, 37.583688],
-			zoom: 11,
+			zoom: 9,
 			controls: []
 		});
 		App.points.map.behaviors.disable('scrollZoom');
-		//App.points.map.controls.geoObjects.add('zoomControl', {right: '0', top: '5px'});
+		//App.points.map.controls.geoObjects.add('zoomControl', {left: '0', top: '5px'});
 
 		if (App.points.initial) {
 			ymaps.geocode(App.points.initial)
@@ -74,7 +74,6 @@ App.points = {
 	},
 	addpoints: function () {
 		App.points.map.geoObjects.removeAll();
-		//console.log(App.points);
 		App.points.data.forEach(function (group) {
 
 			group['points'].forEach(function (point) {
@@ -86,10 +85,10 @@ App.points = {
 						balloonContentBody: '<div class="marker__descr"> ' +
 							'<div class="marker__descr-name">' + point.name + '</div> ' +
 							'<div class="marker__descr-content">' +
-							'Телефон: <span>' + point.phone + '</span><br/>' +
-							'Почта: <span>' + point.email + '</span><br/>' +
-							'Адрес: <span>' + point.address + '</span>' +
-							//'Сайт: <span>' + point.site + '</span>' +
+                            '<span class="address">' + point.address + '</span>' +
+							'<span>Телефон: <a href="tel:' + point.phone + '">'+point.phone+'</a></span>' +
+							'<span>Почта: <a href="mailto:' + point.email + '">'+point.email+'</a></span>' +
+							'<span>Сайт: <a target="_blank" href="mailto:' + point.url + '">'+point.url+'</a></span>' +
 							'</div>  ' +
 							'</div>'
 					},
@@ -116,23 +115,23 @@ App.points = {
 
 		var $that = $(this);
 
-		//var section_id = $that.find('').val();
+		var section_id = $that.find('.m-cont__title-checked-name').val();
 		var section_name = $that.find('.m-cont__title-checked-name').text();
 
 		$.ajax({
 			url: window.location.href,
 			data: {
-				//city_id: section_id,
+				city_id: section_id,
 				city_name: section_name
 			},
 			type: 'GET',
 			dataType: 'html',
 			success: function (data) {
 
-				$("#routes-list").hide();
+				$(".m-cont__tabs-content").hide();
 				$(".ajax-script").remove();
-				$("#routes-list").html(data);
-				$("#routes-list").fadeIn();
+				$(".m-cont__tabs-content").html(data);
+				$(".m-cont__tabs-content").fadeIn();
 
 				App.points.init(arPoints);
 
@@ -144,7 +143,6 @@ App.points = {
 				}
 
 				App.points.addpoints();
-
 
 			}
 
@@ -322,16 +320,71 @@ const mCont = () => {
 		$('.m-cont__drop').toggleClass('is-visible')
 	})
 
-	$('body').on('click', '.m-cont__drop-link', function () {
+	$('body').on('click', '.m-cont__drop-link--main', function () {
 
-		let name = $(this).text()
+		let name = $(this).text();
+		let id = $(this).data('id');
+		let href = $('.m-cont__button .button').attr('href').split('?')[0];
 
-		$('.m-cont__title-checked-name').text(name)
 
-		$('.m-cont__drop').removeClass('is-visible')
+		$('.m-cont__title-checked-name').text(name);
+        $('.m-cont__button .button').attr('href', href + '?city_name=' + name);
+
+		$('.m-cont__drop').removeClass('is-visible');
 
 		return false
 	})
+
+    $('body').on('click', '.m-cont__drop-link--map', function () {
+
+        var $that = $(this);
+
+        var section_id = $that.data('id');
+        var section_name = $that.text();
+
+        $.ajax({
+            url: window.location.href,
+            data: {
+                city_id: section_id,
+                city_name: section_name
+            },
+            type: 'GET',
+            dataType: 'html',
+            success: function (data) {
+
+                $('.m-cont__title-checked-name').text(section_name);
+                $('.m-cont__drop').removeClass('is-visible');
+
+                $(".m-cont__tabs-content").hide();
+                $(".ajax-script").remove();
+                $(".m-cont__tabs-content").html(data);
+                $(".m-cont__tabs-content").fadeIn();
+
+                App.points.init(arPoints);
+
+                if (App.points.initial) {
+                    ymaps.geocode(App.points.initial)
+                        .then(function (res) {
+                            App.points.map.panTo(res.geoObjects.get(0).geometry.getCoordinates(), {flying: false});
+                        });
+                }
+
+                App.points.addpoints();
+
+            }
+
+        });
+        return false
+    });
+
+    $('body').on('click', '.m-cont__tabs-item-title', function(){
+
+        var lat_lng = $(this).data('points').split(',').map(function(i){ return parseFloat(i)});
+        App.points.map.panTo(lat_lng);
+
+        return false;
+
+    });
 }
 
 const pSlider = () => {

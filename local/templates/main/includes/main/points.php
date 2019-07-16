@@ -7,20 +7,27 @@ global $APPLICATION;
     <div class="m-cont__inner">
         <div class="m-cont__title">
             <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/main/points/points-header.php", Array(), Array("MODE" => "html")); ?>
+            <?
+            // получаем разделы
+            $dbResSect = CIBlockSection::GetList(
+                Array("NAME" => "ASC"),
+                Array("IBLOCK_ID" => 8, 'DEPTH_LEVEL' => '1', "ACTIVE" => "Y"),
+                Array("ID", 'NAME')
+            );
+
+            //Получаем разделы и собираем в массив
+            while ($sectRes = $dbResSect->GetNext()) {
+                $arSections[] = $sectRes;
+            }
+
+            ?>
+
             <div class="m-cont__title-checked">
                 <div class="m-cont__title-checked-name">Москве</div>
-                <div class="m-cont__drop"><a class="m-cont__drop-link" href="#">Москва</a>
-                    <a class="m-cont__drop-link" href="#">Санкт-Петербург</a>
-                    <a class="m-cont__drop-link" href="#">Новосибирск</a>
-                    <a class="m-cont__drop-link" href="#">Екатеринбург</a>
-                    <a class="m-cont__drop-link" href="#">Нижний Новгород</a>
-                    <a class="m-cont__drop-link" href="#">Казань</a>
-                    <a class="m-cont__drop-link" href="#">Москва</a>
-                    <a class="m-cont__drop-link" href="#">Санкт-Петербург</a>
-                    <a class="m-cont__drop-link" href="#">Новосибирск</a>
-                    <a class="m-cont__drop-link" href="#">Екатеринбург</a>
-                    <a class="m-cont__drop-link" href="#">Нижний Новгород</a>
-                    <a class="m-cont__drop-link" href="#">Казань</a>
+                <div class="m-cont__drop">
+                    <?foreach ($arSections as $city):?>
+                        <a class="m-cont__drop-link m-cont__drop-link--main" data-id="<?=$city['ID']?>"><?=$city['NAME']?></a>
+                    <?endforeach;?>
                 </div>
             </div>
         </div>

@@ -6,6 +6,14 @@ $APPLICATION->SetPageProperty("title", "Точки продаж");
 $APPLICATION->SetTitle("Точки продаж");
 ?>
 
+<?
+	if($_REQUEST['city_id']){
+        $GLOBALS['arrFilterPoints'] = array('PROPERTY_ATT_CITIES' => $_GET['city_id']);
+	} else {
+        $GLOBALS['arrFilterPoints'] = array('PROPERTY_ATT_CITIES' => 15);
+	}
+?>
+
 <? $APPLICATION->IncludeComponent(
 		"deus:news.line",
 		"points",
@@ -45,7 +53,7 @@ $APPLICATION->SetTitle("Точки продаж");
 				"SORT_ORDER1" => "DESC",
 				"SORT_ORDER2" => "ASC",
 				"COMPONENT_TEMPLATE" => "points",
-				"FILTER_NAME" => "arrFilterPoints"
+				"FILTER_NAME" => "arrFilterPoints",
 		),
 		false
 ); ?>

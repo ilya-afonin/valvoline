@@ -36,7 +36,7 @@ Loc::loadMessages(__FILE__);
 
 <div class="page">
   <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
-    <div class="header" data-aos="fade-down">
+    <div class="header <?=(in_array(PAGE, array('catalog', 'map')))?' header--inner':'';?>" data-aos="fade-down">
         <div class="container">
             <div class="header__row">
                 <div class="header__logo">

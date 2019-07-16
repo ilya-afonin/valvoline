@@ -4,6 +4,7 @@
 	top: 0;
 	right: 0;
 	z-index: 20;
+	pointer-events: none;
 
 	&--scrolled {
 
@@ -63,6 +64,7 @@
 	&__logo {
 		width: 193px;
 		position: relative;
+		pointer-events: stroke;
 
 		img {
 			transition: opacity .3s;
@@ -106,6 +108,7 @@
 	&__burger {
 		cursor: pointer;
 		position: relative;
+		pointer-events: stroke;
 
 		&:after {
 			content: '';
