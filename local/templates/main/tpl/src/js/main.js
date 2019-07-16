@@ -88,7 +88,7 @@ App.points = {
                             '<span class="address">' + point.address + '</span>' +
 							'<span>Телефон: <a href="tel:' + point.phone + '">'+point.phone+'</a></span>' +
 							'<span>Почта: <a href="mailto:' + point.email + '">'+point.email+'</a></span>' +
-							'<span>Сайт: <a target="_blank" href="mailto:' + point.url + '">'+point.url+'</a></span>' +
+							'<span>Сайт: <a target="_blank" href="' + point.url + '">'+point.url+'</a></span>' +
 							'</div>  ' +
 							'</div>'
 					},

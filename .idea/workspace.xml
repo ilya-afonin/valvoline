@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d34300b-227c-4ec0-9521-82fd5567f376" name="Default" comment="Firts commit init">
+    <list default="true" id="2d34300b-227c-4ec0-9521-82fd5567f376" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php" afterPath="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php" afterPath="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" afterPath="$PROJECT_DIR$/local/templates/main/header.php" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/includes/main/points.php" afterPath="$PROJECT_DIR$/local/templates/main/includes/main/points.php" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.min.js" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.min.js" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" />
-      <change beforePath="$PROJECT_DIR$/map/index.php" afterPath="$PROJECT_DIR$/map/index.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="113" column="24" lean-forward="true" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+            <state relative-caret-position="297">
+              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+            <state relative-caret-position="119">
+              <caret line="299" column="24" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -143,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ajaxMore</find>
       <find>scroll</find>
       <find>custom</find>
       <find>map</find>
@@ -173,6 +165,7 @@
       <find>address</find>
       <find>$arSections</find>
       <find>.map .marker__descr-content span</find>
+      <find>.header__menu</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;?=SITE_TEMPLATE_PATH?&gt;/tpl/dist/assets/</replace>
@@ -234,7 +227,6 @@
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/local/templates/main/header.php" />
-        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" />
         <option value="$PROJECT_DIR$/local/templates/main/includes/main/points.php" />
         <option value="$PROJECT_DIR$/map/index.php" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss" />
@@ -242,6 +234,7 @@
         <option value="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" />
+        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" />
       </list>
     </option>
   </component>
@@ -550,7 +543,7 @@
       <workItem from="1562864659657" duration="39357000" />
       <workItem from="1563077177055" duration="37189000" />
       <workItem from="1563171833469" duration="19894000" />
-      <workItem from="1563210471836" duration="14507000" />
+      <workItem from="1563210471836" duration="14942000" />
     </task>
     <task id="LOCAL-00001" summary="Firts commit init">
       <created>1562911665215</created>
@@ -559,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562911665215</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="points">
+      <created>1563257760699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563257760699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110947000" />
+    <option name="totallyTimeSpent" value="111382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
@@ -603,7 +603,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Firts commit init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Firts commit init" />
+    <MESSAGE value="points" />
+    <option name="LAST_COMMIT_MESSAGE" value="points" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -957,14 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="113" column="24" lean-forward="true" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
@@ -991,8 +984,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+        <state relative-caret-position="119">
+          <caret line="299" column="24" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
           <folding />
         </state>
       </provider>
