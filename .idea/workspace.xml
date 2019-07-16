@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d34300b-227c-4ec0-9521-82fd5567f376" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.min.js" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.min.js" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" />
+      <change afterPath="$PROJECT_DIR$/bitrix/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/includes/main/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/includes/main/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_welcome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_welcome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/media/blocks/components/_product-cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/tpl/src/styles/media/blocks/components/_product-cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/map/index.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,117 +25,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="623">
+              <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="299" column="24" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="4267">
+              <caret line="430" column="29" lean-forward="true" selection-start-line="430" selection-start-column="29" selection-end-line="430" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/map/index.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/templates/main/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-              <folding />
+            <state relative-caret-position="-525">
+              <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_map.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss">
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;12692080-cb73-4016-ac96-bbfd244746a9&gt;/bitrix/php_interface/dbconn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="96" column="25" lean-forward="false" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="134">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_m-content.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-content.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="81" column="95" lean-forward="true" selection-start-line="81" selection-start-column="95" selection-end-line="81" selection-end-column="95" />
-              <folding>
-                <marker date="1563233755589" expanded="true" signature="1320:2566" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="1363:1863" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="1439:1453" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="1629:1844" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="1918:1933" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="1934:2566" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="2142:2566" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="2469:2566" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="3090:3104" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="3105:3326" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="3105:3529" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="3439:3529" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="4082:4148" ph="..." />
-                <marker date="1563233755589" expanded="true" signature="4115:4148" ph="{...}" />
-              </folding>
+            <state relative-caret-position="271">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standard_1.php" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="999" column="28" lean-forward="false" selection-start-line="999" selection-start-column="21" selection-end-line="999" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="343">
+              <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result_modifier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-content.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="600">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="points.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/templates/main/includes/main/points.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="567">
+              <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_m-cont.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="293" column="13" lean-forward="true" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="-82">
+              <caret line="19" column="75" lean-forward="true" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/media/blocks/components/_product-cards.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -136,18 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scroll</find>
-      <find>custom</find>
-      <find>map</find>
-      <find>gym</find>
-      <find>add</find>
-      <find>data</find>
-      <find>url</find>
-      <find>.product-card__options</find>
-      <find>.js-show-more</find>
-      <find>consoe</find>
-      <find>init</find>
-      <find>onSelectpoint</find>
       <find>App.points.initial</find>
       <find>m-cont__tabs-opener</find>
       <find>m-cont__tabs-content</find>
@@ -166,6 +137,18 @@
       <find>$arSections</find>
       <find>.map .marker__descr-content span</find>
       <find>.header__menu</find>
+      <find>a</find>
+      <find>m-cont__drop-link--map</find>
+      <find>margin</find>
+      <find>soc</find>
+      <find>.welcome__soc-img</find>
+      <find>header__menu-link</find>
+      <find>m-cont__tabs-button</find>
+      <find>load</find>
+      <find>window.location.has</find>
+      <find>anchors</find>
+      <find>v</find>
+      <find>Debug::</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;?=SITE_TEMPLATE_PATH?&gt;/tpl/dist/assets/</replace>
@@ -184,8 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news/offers/bitrix/news.detail/.default/result_modifier.php" />
-        <option value="$PROJECT_DIR$/offers/index.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/arturgolubev/yandex.share/left/template.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/arturgolubev/yandex.share/detail/template.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news.list/articles/template.php" />
@@ -213,7 +194,6 @@
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/result_modifier.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/catalog.section.list/.default/result_modifier.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/catalog.section.list/.default/template.php" />
-        <option value="$PROJECT_DIR$/local/templates/main/includes/main/content.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/news.php" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/js/map.js" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -223,24 +203,23 @@
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/template.php" />
         <option value="$PROJECT_DIR$/local/templates/main/footer.php" />
         <option value="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/main-catalog/result_modifier.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/local/templates/main/includes/main/points.php" />
+        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss" />
+        <option value="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php" />
+        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" />
+        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" />
+        <option value="$PROJECT_DIR$/map/index.php" />
+        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_welcome.scss" />
+        <option value="$PROJECT_DIR$/local/templates/main/includes/main/content.php" />
+        <option value="&lt;12692080-cb73-4016-ac96-bbfd244746a9&gt;/bitrix/php_interface/dbconn.php" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/media/blocks/components/_product-cards.scss" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/local/templates/main/header.php" />
-        <option value="$PROJECT_DIR$/local/templates/main/includes/main/points.php" />
-        <option value="$PROJECT_DIR$/map/index.php" />
-        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss" />
-        <option value="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php" />
-        <option value="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php" />
-        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss" />
         <option value="$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js" />
-        <option value="$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss" />
+        <option value="$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -248,95 +227,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <gulpfiles>
-      <GulpfileState>
-        <gulpfile-path>$PROJECT_DIR$/local/templates/main/tpl/gulpfile.js</gulpfile-path>
-        <tasks>
-          <GulpTaskState>
-            <task-name>iconfont</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>generate-favicon</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>inject-favicon-markups</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>check-for-favicon-update</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>babelify</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>clean</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>critical</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>styles</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>libcss</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>css</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>templates</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>images</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>fonts</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>scripts</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>libjs</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>files</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>minjs</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>concat</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>common-js</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>js</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>watch</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>build</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>build-min</task-name>
-          </GulpTaskState>
-        </tasks>
-      </GulpfileState>
-    </gulpfiles>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="2560" />
+    <option name="height" value="1339" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -356,88 +250,246 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="deus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="deus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="news.line" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="deus" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="news.line" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="points" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="valvoline" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="map" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog.section.list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog.section.list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog.section.list" type="462c0819:PsiDirectoryNode" />
+              <item name=".default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news.list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="bitrix" type="462c0819:PsiDirectoryNode" />
+              <item name="news.list" type="462c0819:PsiDirectoryNode" />
+              <item name=".default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="deus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="deus" type="462c0819:PsiDirectoryNode" />
+              <item name="news.line" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="deus" type="462c0819:PsiDirectoryNode" />
+              <item name="news.line" type="462c0819:PsiDirectoryNode" />
+              <item name="points" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="valvoline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="valvoline" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -460,19 +512,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bitrix" />
+      <recent name="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/main-catalog" />
+      <recent name="$PROJECT_DIR$/local/components/bitrix/system.pagenavigation/templates" />
+      <recent name="$PROJECT_DIR$/local/components/bitrix" />
+      <recent name="$PROJECT_DIR$/local/templates/main/components/deus/news.line" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/catalog.section.list" />
       <recent name="$PROJECT_DIR$/local/templates/main/includes/main" />
       <recent name="$PROJECT_DIR$/local/templates/main/includes/main/slider" />
       <recent name="$PROJECT_DIR$/local/templates/main/includes/footer" />
       <recent name="$PROJECT_DIR$/local/templates/main/includes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/main-catalog" />
-      <recent name="$PROJECT_DIR$/local/components/bitrix/system.pagenavigation/templates" />
-      <recent name="$PROJECT_DIR$/local/components/bitrix" />
-      <recent name="$PROJECT_DIR$/local/templates/main/components/deus/news.line" />
-      <recent name="$PROJECT_DIR$/local" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -488,15 +540,16 @@
     </option>
   </component>
   <component name="RunManager" selected="Gulp.js.watch">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="build" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+    <configuration name="build" type="js.build_tools.gulp" temporary="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile>$PROJECT_DIR$/local/templates/main/tpl/gulpfile.js</gulpfile>
@@ -505,8 +558,9 @@
       </tasks>
       <arguments />
       <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="watch" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+    <configuration name="watch" type="js.build_tools.gulp" temporary="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile>$PROJECT_DIR$/local/templates/main/tpl/gulpfile.js</gulpfile>
@@ -515,20 +569,18 @@
       </tasks>
       <arguments />
       <envs />
+      <method v="2" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Gulp.js.watch" />
-      <item index="1" class="java.lang.String" itemvalue="Gulp.js.build" />
+    <list>
+      <item itemvalue="Gulp.js.watch" />
+      <item itemvalue="Gulp.js.build" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Gulp.js.watch" />
-        <item index="1" class="java.lang.String" itemvalue="Gulp.js.build" />
+      <list>
+        <item itemvalue="Gulp.js.watch" />
+        <item itemvalue="Gulp.js.build" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -544,6 +596,7 @@
       <workItem from="1563077177055" duration="37189000" />
       <workItem from="1563171833469" duration="19894000" />
       <workItem from="1563210471836" duration="14942000" />
+      <workItem from="1563262531750" duration="11270000" />
     </task>
     <task id="LOCAL-00001" summary="Firts commit init">
       <created>1562911665215</created>
@@ -563,41 +616,39 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111382000" />
+    <option name="totallyTimeSpent" value="122652000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1339" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5021299" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28066528" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5519751" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14643237" sideWeight="0.49566475" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.4978701" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21565495" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14643237" sideWeight="0.4988399" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14643237" sideWeight="0.5011601" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14614774" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Gulp" order="2" side_tool="true" visible="true" weight="0.14614774" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="npm" order="4" sideWeight="0.49566475" side_tool="true" weight="0.14643237" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" weight="0.32886437" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4978701" weight="0.55126184" />
+      <window_info anchor="bottom" id="File Transfer" order="10" visible="true" weight="0.2791798" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978701" weight="0.3289183" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021299" side_tool="true" weight="0.32993197" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.21564734" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -606,23 +657,18 @@
     <MESSAGE value="points" />
     <option name="LAST_COMMIT_MESSAGE" value="points" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/system.pagenavigation/pagination/style.css" />
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/system.pagenavigation/pagination/lang/ru/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/system.pagenavigation/pagination/template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -641,17 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15070" column="17" lean-forward="false" selection-start-line="15070" selection-start-column="17" selection-end-line="15070" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/articles/detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -676,11 +715,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/lang/en/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/articles/news.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -698,24 +733,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/script.js" />
-    <entry file="file://$PROJECT_DIR$/local/templates/main/includes/main/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/components/deus/news.line/templates/.default/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/components/deus/news.line/templates/.default/template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -729,7 +757,7 @@
     <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/dist/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
-          <caret line="189" column="18" lean-forward="false" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+          <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -743,24 +771,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="35" column="2" lean-forward="false" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/components/bitrix/system.pagenavigation/templates/ajax_more/lang/ru/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
+        <state>
+          <caret column="49" selection-start-column="49" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/_default.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
-          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
         </state>
       </provider>
     </entry>
@@ -788,54 +809,14 @@
     <entry file="file://$PROJECT_DIR$/local/templates/main/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
-          <caret line="94" column="160" lean-forward="false" selection-start-line="94" selection-start-column="160" selection-end-line="94" selection-end-column="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/catalog.section.list/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-          <folding />
+          <caret line="94" column="160" selection-start-line="94" selection-start-column="160" selection-end-line="94" selection-end-column="160" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/result_modifier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/dist/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/media/blocks/components/_product-cards.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -843,31 +824,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/catalog.section.list/.default/result_modifier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="45" />
-          <folding />
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/main-catalog/result_modifier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -875,22 +845,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="22" selection-end-column="0" />
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -905,96 +866,148 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="999" column="28" lean-forward="false" selection-start-line="999" selection-start-column="21" selection-end-line="999" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="81" column="95" lean-forward="true" selection-start-line="81" selection-start-column="95" selection-end-line="81" selection-end-column="95" />
-          <folding>
-            <marker date="1563233755589" expanded="true" signature="1320:2566" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="1363:1863" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="1439:1453" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="1629:1844" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="1918:1933" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="1934:2566" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="2142:2566" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="2469:2566" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="3090:3104" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="3105:3326" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="3105:3529" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="3439:3529" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="4082:4148" ph="..." />
-            <marker date="1563233755589" expanded="true" signature="4115:4148" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="23976">
+          <caret line="999" column="3" selection-start-line="999" selection-start-column="3" selection-end-line="999" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/includes/main/points.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-cont.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="293" column="13" lean-forward="true" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
-          <folding />
+          <caret line="293" column="13" selection-start-line="293" selection-start-column="13" selection-end-line="293" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="8567" column="4" selection-start-line="8567" selection-start-column="4" selection-end-line="8567" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_map.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="96" column="25" lean-forward="false" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js">
+    <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/result_modifier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="299" column="24" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="171">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/standing/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="443">
+          <caret line="211" column="45" lean-forward="true" selection-start-line="211" selection-start-column="45" selection-end-line="211" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/dist/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/includes/main/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_welcome.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/catalog.section.list/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_product-cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/blocks/components/_m-content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/components/bitrix/news/catalog/bitrix/news.list/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="19" column="75" lean-forward="true" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/styles/media/blocks/components/_product-cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/tpl/src/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4267">
+          <caret line="430" column="29" lean-forward="true" selection-start-line="430" selection-start-column="29" selection-end-line="430" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/templates/main/components/deus/news.line/points/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

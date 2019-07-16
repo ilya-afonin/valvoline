@@ -24,6 +24,10 @@ Loc::loadMessages(__FILE__);
     <meta http-equiv="X-UA-Compatible&quot;,content=&quot;IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon128px.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon64px.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon32px.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
     <?
     $assets->addCss(SITE_TEMPLATE_PATH . "/tpl/dist/assets/css/styles.css");
     $assets->addCss('https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css');

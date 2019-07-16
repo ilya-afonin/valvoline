@@ -7,11 +7,18 @@ $APPLICATION->SetTitle("Точки продаж");
 ?>
 
 <?
-	if($_REQUEST['city_id']){
-        $GLOBALS['arrFilterPoints'] = array('PROPERTY_ATT_CITIES' => $_GET['city_id']);
-	} else {
-        $GLOBALS['arrFilterPoints'] = array('PROPERTY_ATT_CITIES' => 15);
-	}
+$arrFilterPoints = array();
+
+if($_REQUEST['city_id'])
+	$city_id = $_REQUEST['city_id'];
+else
+	$city_id = 15;  //Москва
+
+$arrFilterPoints[] = array(
+		"LOGIC" => "OR",
+		array("LOGIC" => "AND" , array("PROPERTY_ATT_CITIES" => $city_id, 'IBLOCK_ID' => 6)),
+		array("LOGIC" => "AND" , array("SECTION_ID" => $city_id, 'IBLOCK_ID' => 8))
+);
 ?>
 
 <? $APPLICATION->IncludeComponent(

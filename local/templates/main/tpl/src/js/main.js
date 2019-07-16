@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 	firstScreen();
 
-    //anchors();
+    anchors();
 
     ajaxMore();
 
@@ -58,12 +58,19 @@ App.points = {
 	initMap: function () {
 		App.points.map = new ymaps.Map("map", {
 			center: [55.807304, 37.583688],
-			zoom: 9,
+			zoom: 7,
 			controls: []
 		});
 		App.points.map.behaviors.disable('scrollZoom');
-		//App.points.map.controls.geoObjects.add('zoomControl', {left: '0', top: '5px'});
-
+		App.points.map.controls.add('zoomControl', {
+			options: {
+				position: {
+					right: 0,
+					top: '50%'
+				},
+				size: "auto"
+			}
+		});
 		if (App.points.initial) {
 			ymaps.geocode(App.points.initial)
 				.then(function (res) {
@@ -328,7 +335,7 @@ const mCont = () => {
 
 
 		$('.m-cont__title-checked-name').text(name);
-        $('.m-cont__button .button').attr('href', href + '?city_name=' + name);
+        $('.m-cont__button .button').attr('href', href + '?city_name=' + name + '&city_id=' + id);
 
 		$('.m-cont__drop').removeClass('is-visible');
 
@@ -359,6 +366,9 @@ const mCont = () => {
                 $(".ajax-script").remove();
                 $(".m-cont__tabs-content").html(data);
                 $(".m-cont__tabs-content").fadeIn();
+
+
+				history.replaceState(null, null, window.location.pathname + '?city_name=' + section_name + '&city_id=' + section_id);
 
                 App.points.init(arPoints);
 
@@ -405,20 +415,22 @@ const pSlider = () => {
                 if($(this).hasClass('active') ){
                     indx = $(this).data('index');
 
-                    clearInterval(timer);
-
-                    $('.owl-item').not('.active').removeClass('animated bounceInRight');
-                    $(this).parent().addClass('animated bounceInRight');
-
-                    let timer = setTimeout(function () {
-                        $('.owl-item').not('.active').removeClass('animated bounceInRight');
-                        clearInterval(timer)
-                    }, 1000);
-
 					setTimeout(function () {
 						$('.p-slider__scene').trigger('to.owl.carousel', indx);
 
-					},100)
+					},100);
+
+                    clearInterval(timer);
+
+                    $('.owl-item').not('.active').removeClass('animated bounceInRight');
+                    $(this).parent('.owl-item').addClass('animated bounceInRight');
+
+                    let timer = setTimeout(function () {
+                        $('.owl-item').not('.active').removeClass('animap-slider__slideted bounceInRight');
+                        clearInterval(timer)
+                    }, 1000);
+
+
 
                 }
 
@@ -577,15 +589,30 @@ const firstScreen = () => {
 	}
 }
 
-/*const anchors = () => {
+const anchors = () => {
 
     $(function () {
-        $('.scroll').on('click', function (e) {
-            e.preventDefault();
-            $('html,body').animate({
-                scrollTop: $($(this).attr('href')).offset().top + 'px'
-            }, 1100, 'swing');
+        $('.header__menu-link ').on('click', function (e) {
 
+        	var link = $(this).attr('href');
+        	var hash = link.split('/');
+
+            if(hash[1].indexOf('#')) {
+				$('html,body').animate({
+					scrollTop: $(hash[1]).offset().top + 'px'
+				}, 1100, 'swing');
+			}
+
+            $('.header__menu').removeClass('is-opened');
+            $('.header__burger').removeClass('is-opened');
+            $('.header__logo').removeClass('is-active');
+
+			let content = welcome.next('.container');
+			let welcome = $('.welcome')
+			welcome.css({
+				'margin-bottom': '0px'
+			});
+			content.removeAttr('style')
         });
 
         if (window.location.hash) {
@@ -598,7 +625,7 @@ const firstScreen = () => {
         }
     });
 
-};   */
+};
 
 Share = {
     vkontakte: function(purl, ptitle, pimg, text) {

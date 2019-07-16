@@ -18,14 +18,13 @@ use Bitrix\Main\Localization\Loc as Loc,
 Loc::loadMessages(__FILE__);
 $request = Context::getCurrent()->getRequest();
 
-Debug::dtc($arResult, 'res');
 ?>
 <div class="map">
     <div class="map__map" id="map"></div>
     <div class="map__content">
         <div class="m-cont__title m-cont__title--compact" data-aos="fade-up">Выбрать другую точку
             <div class="m-cont__title-checked">
-                <div class="m-cont__title-checked-name">Москва</div>
+                <div class="m-cont__title-checked-name"><?=($_REQUEST['city_name'])?$_REQUEST['city_name']:'Москва'?></div>
                 <div class="m-cont__drop">
                     <? foreach ($arResult["SECTIONS"] as $city): ?>
                         <a class="m-cont__drop-link m-cont__drop-link--map" data-id="<?= $city['ID'] ?>"><?= $city['NAME'] ?></a>
@@ -35,8 +34,8 @@ Debug::dtc($arResult, 'res');
         </div>
         <div class="m-cont__tabs">
             <div class="m-cont__tabs-top">
-                <div class="m-cont__tabs-button" data-tab="type_1" style="display: block">Точки продаж</div>
-                <div class="m-cont__tabs-button is-active" data-tab="type_2">Дистрибьюторы</div>
+                <div class="m-cont__tabs-button" data-tab="type_1">Точки продаж</div>
+                <div class="m-cont__tabs-button is-active" style="display: block" data-tab="type_2">Дистрибьюторы</div>
                 <div class="m-cont__tabs-opener is-active">
                     <div class="m-cont__tabs-opener-bar"></div>
                     <div class="m-cont__tabs-opener-bar"></div>

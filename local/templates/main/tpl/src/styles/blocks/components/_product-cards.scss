@@ -30,6 +30,8 @@
 	&__top {
 		margin-bottom: 50px;
 		display: flex;
+		justify-content: flex-start;
+		width: 100%;
 	}
 
 	&__img {

@@ -2,7 +2,8 @@
 	position: relative;
 	overflow: hidden;
 	z-index: 10;
-	margin-bottom: 2000px;
+
+
 
 	&:after {
 		content: '';
@@ -98,7 +99,7 @@
 		}
 
 		&-img {
-			max-height: 15px;
+			max-height: 19px;
 			max-width: 21px;
 
 			&-wrapper {
@@ -156,5 +157,11 @@
 			left: 10px;
 			top: 0;
 		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.welcome {
+		margin-bottom: 2000px;
 	}
 }
