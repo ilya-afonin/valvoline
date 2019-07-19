@@ -34,9 +34,9 @@ $request = Context::getCurrent()->getRequest();
         </div>
         <div class="m-cont__tabs">
             <div class="m-cont__tabs-top">
-                <div class="m-cont__tabs-button" data-tab="type_1">Точки продаж</div>
-                <div class="m-cont__tabs-button is-active" style="display: block" data-tab="type_2">Дистрибьюторы</div>
-                <div class="m-cont__tabs-opener is-active">
+                <div class="m-cont__tabs-button is-active" data-tab="type_1" style="display: block">Точки продаж</div>
+                <div class="m-cont__tabs-button" data-tab="type_2">Дистрибьюторы</div>
+                <div class="m-cont__tabs-opener">
                     <div class="m-cont__tabs-opener-bar"></div>
                     <div class="m-cont__tabs-opener-bar"></div>
                     <div class="m-cont__tabs-opener-bar"></div>
@@ -47,13 +47,13 @@ $request = Context::getCurrent()->getRequest();
                     <? $APPLICATION->RestartBuffer(); ?>
                 <? endif ?>
 
-                <div class="m-cont__tabs-content-item" id="type_1">
+                <div class="m-cont__tabs-content-item" id="type_1" style="display:block;">
                     <? foreach ($arResult["SECTIONS"] as $arSec): ?>
                         <? foreach ($arSec["ELEMENTS"] as $key => $arItem): ?>
 
                             <? if ($arItem["IBLOCK_ID"] == 8 && $arItem['IBLOCK_SECTION_ID'] == $arSec['ID']): ?>
                                 <div class="m-cont__tabs-item">
-                                    <a class="m-cont__tabs-item-title" data-points="<?= $arItem['PROPERTY_ATT_POINTS_VALUE'] ?>"><?= $arItem['NAME'] ?></a>
+                                    <a class="m-cont__tabs-item-title" data-points="<?= implode(',', array($arItem['PROPERTY_ATT_LAT_VALUE'], $arItem['PROPERTY_ATT_LNG_VALUE'])) ?>"><?= $arItem['NAME'] ?></a>
                                     <div class="m-cont__tabs-item-addr"><?= (($arItem['PROPERTY_ATT_CITY_VALUE'])?$arItem['PROPERTY_ATT_CITY_VALUE'].', ':'').$arItem['PROPERTY_ATT_ADDRESS_VALUE'] ?></div>
                                 </div>
                             <? endif; ?>
@@ -61,7 +61,7 @@ $request = Context::getCurrent()->getRequest();
                         <? endforeach; ?>
                     <? endforeach; ?>
                 </div>
-                <div class="m-cont__tabs-content-item" id="type_2" style="display:block;">
+                <div class="m-cont__tabs-content-item" id="type_2">
                     <? foreach ($arResult["SECTIONS"] as $arSec): ?>
                         <? foreach ($arSec["ELEMENTS"] as $key => $arItem): ?>
                             <? if ($arItem["IBLOCK_ID"] == 6 && $arItem['PROPERTY_ATT_CITIES_VALUE'] == $arSec['ID']): ?>
@@ -77,7 +77,7 @@ $request = Context::getCurrent()->getRequest();
 
                 <script class="ajax-script">
                     arPoints = {
-                        marker: '/local/templates/main/tpl/dist/assets/images/static/marker-1.svg',
+                        marker: '/local/templates/main/tpl/dist/assets/images/static/marker-2.svg',
                         initial: '<?= ($_GET['city_name']) ? $_GET['city_name'] : 'Москва' ?>',
                         groups: <?= CUtil::PhpToJSObject($arResult['POINTS']) ?>
                     };

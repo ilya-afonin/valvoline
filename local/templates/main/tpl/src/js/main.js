@@ -58,7 +58,7 @@ App.points = {
 	initMap: function () {
 		App.points.map = new ymaps.Map("map", {
 			center: [55.807304, 37.583688],
-			zoom: 7,
+			zoom: 9,
 			controls: []
 		});
 		App.points.map.behaviors.disable('scrollZoom');
@@ -361,7 +361,8 @@ const mCont = () => {
 
                 $('.m-cont__title-checked-name').text(section_name);
                 $('.m-cont__drop').removeClass('is-visible');
-
+				$('.m-cont__tabs-button').removeClass('is-active');
+				$('.m-cont__tabs-button').eq(0).addClass('is-active');
                 $(".m-cont__tabs-content").hide();
                 $(".ajax-script").remove();
                 $(".m-cont__tabs-content").html(data);
