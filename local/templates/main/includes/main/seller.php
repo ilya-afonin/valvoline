@@ -19,7 +19,7 @@ global $APPLICATION;
                 <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/main/seller/seller-title.php", Array(), Array("MODE" => "text")); ?>
             </div>
             <div class="seller__text">
-                <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/main/seller/seller-text.php", Array(), Array("MODE" => "text")); ?>
+                <? $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . "/includes/main/seller/seller-text.php", Array(), Array("MODE" => "html")); ?>
             </div>
             <a class="seller__mail" href="mailto:<?=COption::GetOptionString( "askaron.settings", "UF_EMAIL_DISTRIB");?>"><?=COption::GetOptionString( "askaron.settings", "UF_EMAIL_DISTRIB");?></a>
             <a class="seller__list" href="<?=CFile::GetPath(COption::GetOptionString( "askaron.settings", "UF_FILE_DISTRIB"));?>" target="_blank">

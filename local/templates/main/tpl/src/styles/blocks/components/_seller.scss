@@ -121,6 +121,10 @@
 		line-height: 36px;
 		color: #111820;
 		margin-bottom: 60px;
+		max-width: 90%;
+		ul {
+			padding: 0 15px;
+		}
 	}
 
 	&__mail {
