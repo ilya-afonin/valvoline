@@ -30,7 +30,6 @@ Loc::loadMessages(__FILE__);
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
     <?
     $assets->addCss(SITE_TEMPLATE_PATH . "/tpl/dist/assets/css/styles.css");
-    $assets->addCss('https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css');
     $APPLICATION->ShowCSS();
     $APPLICATION->ShowHeadStrings();
     ?>
