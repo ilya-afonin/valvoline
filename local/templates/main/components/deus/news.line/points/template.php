@@ -53,7 +53,7 @@ $request = Context::getCurrent()->getRequest();
 
                             <? if ($arItem["IBLOCK_ID"] == 8 && $arItem['IBLOCK_SECTION_ID'] == $arSec['ID']): ?>
                                 <div class="m-cont__tabs-item">
-                                    <a class="m-cont__tabs-item-title" data-points="<?= implode(',', array($arItem['PROPERTY_ATT_LAT_VALUE'], $arItem['PROPERTY_ATT_LNG_VALUE'])) ?>"><?= $arItem['NAME'] ?></a>
+                                    <a class="m-cont__tabs-item-title" data-id="<?=$arItem['ID']?>" data-points="<?= implode(',', array($arItem['PROPERTY_ATT_LAT_VALUE'], $arItem['PROPERTY_ATT_LNG_VALUE'])) ?>"><?= $arItem['NAME'] ?></a>
                                     <div class="m-cont__tabs-item-addr"><?= $arItem['PROPERTY_ATT_ADDRESS_VALUE'] ?></div>
                                 </div>
                             <? endif; ?>
@@ -66,7 +66,7 @@ $request = Context::getCurrent()->getRequest();
                         <? foreach ($arSec["ELEMENTS"] as $key => $arItem): ?>
                             <? if ($arItem["IBLOCK_ID"] == 6 && $arItem['PROPERTY_ATT_CITIES_VALUE'] == $arSec['ID']): ?>
                                 <div class="m-cont__tabs-item">
-                                    <a class="m-cont__tabs-item-title" data-points="<?= implode(',', array($arItem['PROPERTY_ATT_LAT_VALUE'], $arItem['PROPERTY_ATT_LNG_VALUE'])) ?>"><?= $arItem['NAME'] ?></a>
+                                    <a class="m-cont__tabs-item-title" data-id="<?=$arItem['ID']?>" data-points="<?= implode(',', array($arItem['PROPERTY_ATT_LAT_VALUE'], $arItem['PROPERTY_ATT_LNG_VALUE'])) ?>"><?= $arItem['NAME'] ?></a>
                                     <div class="m-cont__tabs-item-addr"><?= $arItem['PROPERTY_ATT_ADDRESS_VALUE'] ?></div>
                                 </div>
                             <? endif ?>

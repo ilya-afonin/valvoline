@@ -27,10 +27,9 @@ global $APPLICATION;
         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
         ?>
         <div class="product-card" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-          <!--<a class="product-card__link" href="<?/*= $arItem['DETAIL_PAGE_URL'] */?>"></a>-->
           <div class="product-card__top">
 
-            <img class="product-card__img" src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="NAME">
+            <img class="product-card__img" src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="<?=$arItem['NAME']?>">
 
             <?
             $arrFass = array();
@@ -67,7 +66,7 @@ global $APPLICATION;
           </div>
           <div class="product-card__content">
             <div class="product-card__name"><?= $arItem['NAME'] ?></div>
-            <div class="product-card__text product-card__text--green"><?= $arItem['PREVIEW_TEXT'] ?></div>
+            <div class="product-card__text <?=(in_array($arItem['IBLOCK_SECTION_ID'], array(2, 4)))?'product-card__text--grey':'product-card__text--green'?>"><?= $arItem['PREVIEW_TEXT'] ?></div>
             <div class="product-card__text product-card__text--grey"><?= $arItem['DETAIL_TEXT'] ?></div>
           </div>
         </div>

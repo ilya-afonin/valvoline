@@ -67,7 +67,7 @@ $count = count($arResult['ITEMS']);
                         </div>
                     </div>
                 <? endif; ?>
-                <? if ($key == 3 || $count < 3): ?>
+                <? if ($key == 3 || ($key == $count - 1 && $count <= 3)): ?>
                     </div>
                     </div>
                     </div>

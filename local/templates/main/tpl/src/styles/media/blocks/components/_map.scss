@@ -44,11 +44,14 @@
 			margin-left: 15px;
 			margin-right: 15px;
 		}
-
+		[class*=balloon__content] {
+			margin-right: 0 !important;
+			padding-right: 12px !important;
+		}
 		.marker {
 
 			&__descr {
-				width: 290px;
+				width: calc(100vw - 65px);
 			}
 		}
 	}

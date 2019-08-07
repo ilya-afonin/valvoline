@@ -1,4 +1,5 @@
 let arPoints;
+let placemarks = [];
 App = {};
 
 $(document).ready(function () {
@@ -62,15 +63,10 @@ App.points = {
 			controls: []
 		});
 		App.points.map.behaviors.disable('scrollZoom');
-		App.points.map.controls.add('zoomControl', {
-			options: {
-				position: {
-					left: '100%',
-					top: '50%'
-				},
-				size: "auto"
-			}
-		});
+		if($(window).width() > 767){
+			App.points.map.controls.add('zoomControl',  {position: {right: '20px', top: '200px'}});
+		}
+
 		if (App.points.initial) {
 			ymaps.geocode(App.points.initial)
 				.then(function (res) {
@@ -121,6 +117,7 @@ App.points = {
 					}
 				);
 				placemark.properties.set('address', point.address);
+				placemarks[point.id] = placemark;
 				App.points.map.geoObjects.add(placemark);
 			});
 		});
@@ -405,10 +402,23 @@ const mCont = () => {
 
     $('body').on('click', '.m-cont__tabs-item-title', function(){
 
-        var lat_lng = $(this).data('points').split(',').map(function(i){ return parseFloat(i)});
-        App.points.map.panTo(lat_lng);
+        let lat_lng = $(this).data('points').split(',').map(function(i){ return parseFloat(i)});
+		let mark_id = $(this).data('id');
 
-        return false;
+		let mark = placemarks[mark_id];
+
+		App.points.map.panTo(lat_lng)
+			.then(function() {
+				if (mark.getMap()) {
+					mark.balloon.open();
+				}
+			});
+
+        if($(window).width() < 768){
+
+        	$('.m-cont__tabs-opener').click();
+
+		}
 
     });
 }
