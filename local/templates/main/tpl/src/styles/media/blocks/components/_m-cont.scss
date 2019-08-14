@@ -45,28 +45,23 @@
 			line-height: 32px; 
 
 			&-checked {
-				padding-right: 20px;
-
+				position: unset;
 				&-name {
-
+					padding-right: 50px;
 					&:after {
 						width: 20px;
 						height: 12px;
 						background-size: cover;
-						left: calc(100% - -10px);
+						left: auto;
+						right: 0;
 					}
 				}
 			}
 		}
 
 		&__drop {
-			width: 280px;
-			left: 50%;
-			transform: translateX(-50%);
-
-			&.is-visible {
-				transform: translateX(-50%) translateY(0);
-			}
+			width: 300px;
+			left: -15px;
 		}
 
 		&__button {
